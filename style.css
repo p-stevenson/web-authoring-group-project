@@ -175,6 +175,11 @@ body {
     height: 50px;
 }
 
+.svg-tiny {
+    width: 40px;
+    height: 40px;
+}
+
 .svg-back {
     z-index: 1;
 }
@@ -186,6 +191,15 @@ body {
 .svg-front {
     z-index: 3;
 }
+
+.svg-overlap-1 { position: absolute; left: 5%; bottom: 20px; }
+.svg-overlap-2 { position: absolute; left: 18%; bottom: 35px; }
+.svg-overlap-3 { position: absolute; left: 28%; bottom: 15px; }
+.svg-overlap-4 { position: absolute; left: 42%; bottom: 40px; }
+.svg-overlap-5 { position: absolute; left: 55%; bottom: 25px; }
+.svg-overlap-6 { position: absolute; left: 68%; bottom: 45px; }
+.svg-overlap-7 { position: absolute; left: 78%; bottom: 20px; }
+.svg-overlap-8 { position: absolute; left: 88%; bottom: 30px; }
 
 .secondary-bar {
     background-color: #5c4a44;
