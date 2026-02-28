@@ -131,7 +131,7 @@ body {
     margin-top: 30px;
     border-radius: 20px 20px 0 0;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
@@ -141,43 +141,49 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 0;
     padding: 20px;
     background: #8b5a3c;
     border-radius: 8px 8px 0 0;
-    width: 90%;
-    max-width: 800px;
-    height: 30px;
+    width: 75%;
+    max-width: 700px;
+    height: 160px;
     position: relative;
 }
 
 .hobby-svg {
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s;
 }
 
 .hobby-svg:hover {
-    transform: scale(1.1) translateY(-5px);
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.4));
+}
+
+.svg-xlarge {
+    width: 150px;
+    height: 150px;
+    margin-right: -25px;
 }
 
 .svg-large {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+    margin-right: -20px;
 }
 
 .svg-medium {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
+    margin-right: -15px;
 }
 
 .svg-small {
-    width: 100px;
-    height: 100px;
-}
-
-.svg-tiny {
     width: 80px;
     height: 80px;
+    margin-right: -10px;
 }
 
 .svg-back {
@@ -191,15 +197,6 @@ body {
 .svg-front {
     z-index: 3;
 }
-
-.svg-overlap-1 { position: absolute; left: 5%; bottom: 20px; }
-.svg-overlap-2 { position: absolute; left: 18%; bottom: 35px; }
-.svg-overlap-3 { position: absolute; left: 28%; bottom: 15px; }
-.svg-overlap-4 { position: absolute; left: 42%; bottom: 40px; }
-.svg-overlap-5 { position: absolute; left: 55%; bottom: 25px; }
-.svg-overlap-6 { position: absolute; left: 68%; bottom: 45px; }
-.svg-overlap-7 { position: absolute; left: 78%; bottom: 20px; }
-.svg-overlap-8 { position: absolute; left: 88%; bottom: 30px; }
 
 .secondary-bar {
     background-color: #5c4a44;
@@ -349,17 +346,28 @@ body {
         align-items: center;
     }
     
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .stat-number {
-        font-size: 2.5rem;
-    }
-    
     .illustration-shelf {
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    .svg-xlarge {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .svg-large {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .svg-medium {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .svg-small {
+        width: 60px;
+        height: 60px;
     }
 }
