@@ -4,16 +4,18 @@
 - **Topic:** Hobbies
 - **Tech:** HTML + CSS only (no JavaScript)
 - **Pages:** 1 homepage + 4 sub-pages (one per hobby category)
+- **Branding:** HOBBYCLUB (rebranded from HOBBYHUB)
 
 ---
 
 ## Page Structure
 
-### Homepage
-- Matches `home-page-template.png` style
+### Homepage ✅ DONE
 - Hero section with headline + CTA buttons + hobby illustration
 - "Like What You See?" divider
 - 4 category cards (links to sub-pages)
+- Sticky navigation with mobile hamburger menu
+- Animated falling icons in hero section
 - Stats footer
 
 ### Sub-Page Template
@@ -25,30 +27,35 @@
 
 ---
 
-## Sub-Page Topics (TBD by teammates)
-1. Sewing & Knitting
-2. Aeromodelling
-3. Photography
+## Sub-Page Topics
+1. Knitting (was Sewing)
+2. Models (was Aeromodelling)
+3. Cinema (was Photography)
 4. Gaming
 
 ---
 
-## Plan
+## Current Status
 
-### Phase 1: Homepage
-- [ ] Review existing index.html and style.css
-- [ ] Update HTML to match template structure
-- [ ] Update CSS to match template colors/layout
-- [ ] Test in browser
+### Phase 1: Homepage ✅ COMPLETE
+- [x] Review existing index.html and style.css
+- [x] Update HTML to match template structure
+- [x] Update CSS to match template colors/layout
+- [x] Add CSS custom properties (variables)
+- [x] Implement mobile hamburger menu (CSS-only checkbox hack)
+- [x] Add Slackey display font
+- [x] Add hero falling icon animation
+- [x] Test in browser
 
 ### Phase 2: Sub-Page Template
 - [ ] Create reusable HTML structure
 - [ ] Create sub-page CSS (or extend main CSS)
 - [ ] Ensure consistent header/footer
+- [ ] Copy template to each hobby page
 
 ### Phase 3: Content
-- [ ] Populate each sub-page with teammate content
-- [ ] Add appropriate images
+- [ ] Populate each sub-page with content
+- [ ] Add appropriate images/SVGs
 
 ### Phase 4: Final Review
 - [ ] Check all links work
@@ -57,14 +64,50 @@
 
 ---
 
+## Technical Highlights
+
+### CSS-Only Solutions (No JavaScript)
+- **Mobile navigation:** Checkbox hack (`<input type="checkbox">` + `:checked` selector)
+- **Hero animation:** CSS keyframes with staggered delays
+- **Hover effects:** `:hover` states on buttons and cards
+
+### CSS Architecture
+- Centralized color/spacing tokens via CSS custom properties
+- Mobile-first responsive design
+- Fluid typography with `clamp()`
+
+### Custom Assets
+- Slackey font (display headings)
+- Custom inline SVGs (husky logo, hobby icons)
+
+---
+
+## File Structure
+```
+/
+├── index.html          # Homepage ✅
+├── sewing.html         # Knitting page
+├── aeromodelling.html # Models page
+├── photography.html   # Cinema page
+├── gaming.html        # Gaming page
+├── style.css          # Main stylesheet
+├── fonts/
+│   └── Slackey/       # Custom display font
+└── images/
+    └── *.svg          # Custom SVG icons
+```
+
+---
+
 ## Assets
 - `images/` folder - place images here
-- `svg/` folder - vector graphics
-- `reference/` folder - reference materials
+- `fonts/` folder - custom fonts
+- `docs/` folder - project documentation
 
 ---
 
 ## Notes
 - Keep it simple: HTML + CSS only
 - Use semantic HTML tags
-- Match the modern flat design from template
+- All animations and interactions work without JavaScript
+- Project process documentation: `docs/PROJECT_PROCESS.md`
