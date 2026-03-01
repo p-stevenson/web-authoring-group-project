@@ -61,6 +61,7 @@
 - [ ] Check all links work
 - [ ] Verify responsive behavior
 - [ ] Validate HTML/CSS
+- [ ] Replace 404 placeholder links with actual pages
 
 ---
 
@@ -79,6 +80,7 @@
 ### Custom Assets
 - Slackey font (display headings)
 - Custom inline SVGs (husky logo, hobby icons)
+- Custom 404 page with husky and Slackey font
 
 ---
 
@@ -86,10 +88,11 @@
 ```
 /
 ├── index.html          # Homepage ✅
-├── sewing.html         # Knitting page
-├── aeromodelling.html # Models page
-├── photography.html   # Cinema page
-├── gaming.html        # Gaming page
+├── 404.html           # Custom 404 page ✅
+├── sewing.html        # Knitting page (placeholder → 404)
+├── aeromodelling.html # Models page (placeholder → 404)
+├── photography.html   # Cinema page (placeholder → 404)
+├── gaming.html        # Gaming page (placeholder → 404)
 ├── style.css          # Main stylesheet
 ├── fonts/
 │   └── Slackey/       # Custom display font
