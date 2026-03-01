@@ -48,6 +48,7 @@
 - [x] Test in browser
 
 ### Phase 2: Sub-Page Template
+- [ ] Review reference layouts in `reference/` folder
 - [ ] Create reusable HTML structure
 - [ ] Create sub-page CSS (or extend main CSS)
 - [ ] Ensure consistent header/footer
@@ -89,6 +90,10 @@
 /
 ├── index.html          # Homepage ✅
 ├── 404.html           # Custom 404 page ✅
+├── reference/         # Layout reference materials
+│   ├── home-page.png
+│   ├── 5-layout-options.png
+│   └── hobby-page-rough-draft-001.jpg
 ├── sewing.html        # Knitting page (placeholder → 404)
 ├── aeromodelling.html # Models page (placeholder → 404)
 ├── photography.html   # Cinema page (placeholder → 404)
@@ -99,6 +104,18 @@
 └── images/
     └── *.svg          # Custom SVG icons
 ```
+
+---
+
+## Sub-Page Design Reference
+
+Wireframe structure (from `hobby-page-rough-draft-001.jpg`):
+1. **Hero** — Hobby title + visual
+2. **Intro** — Introduction to the hobby + autoscroll image
+3. **Resources** — Images + links to external resources
+4. **Comparison** — 3 options (costs, difficulty, barrier to entry)
+
+5 layout variants available in `5-layout-options.png`.
 
 ---
 
