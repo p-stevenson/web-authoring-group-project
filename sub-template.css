@@ -1,0 +1,246 @@
+/* ========================================
+   SUB-PAGE TEMPLATE STYLES
+   Add to style.css or use standalone
+   ======================================== */
+
+/* Sub-page Hero */
+.sub-hero {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, transparent 50%);
+}
+
+.sub-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.sub-hero h1 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-hero-tagline {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container */
+.sub-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Intro Section */
+.sub-intro {
+    padding: 60px 0;
+    background-color: var(--color-white);
+}
+
+.sub-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.sub-intro-text h2 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-brown);
+    margin-bottom: 20px;
+}
+
+.sub-intro-text p {
+    color: var(--color-text);
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.sub-intro-image .image-placeholder {
+    background-color: var(--color-gray-light);
+    border-radius: 12px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-mid);
+    font-size: 1.1rem;
+    border: 2px dashed var(--color-gray-mid);
+}
+
+/* Resources Section */
+.sub-resources {
+    padding: 60px 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+}
+
+/* Undulating shape */
+.sub-resources::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: var(--color-black);
+    clip-path: ellipse(60% 100% at 50% 0%);
+}
+
+.sub-resources h2 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.resource-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.resource-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.resource-card p {
+    color: var(--color-gray-mid);
+    font-size: 0.9rem;
+}
+
+/* Comparison Section */
+.sub-comparison {
+    padding: 60px 0;
+    background-color: var(--color-gray-light);
+}
+
+.sub-comparison h2 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.sub-comparison-intro {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.comparison-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 5px solid;
+}
+
+.comparison-card-green {
+    border-color: var(--color-green);
+}
+
+.comparison-card-orange {
+    border-color: var(--color-accent);
+}
+
+.comparison-card-purple {
+    border-color: var(--color-violet);
+}
+
+.comparison-card h3 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-brown);
+    margin-bottom: 15px;
+}
+
+.comparison-cost {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.comparison-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.comparison-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-gray-light);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.comparison-card li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sub-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-intro-image {
+        order: -1;
+    }
+
+    .sub-resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+}
