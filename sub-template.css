@@ -1,9 +1,3 @@
-/* ========================================
-   SUB-PAGE TEMPLATE STYLES
-   Add to style.css or use standalone
-   ======================================== */
-
-/* Sub-page Hero */
 .sub-hero {
     background-color: var(--color-accent);
     color: var(--color-white);
@@ -39,14 +33,12 @@
     margin: 0 auto;
 }
 
-/* Container */
 .sub-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Intro Section */
 .sub-intro {
     padding: 60px 0;
     background-color: var(--color-white);
