@@ -1,17 +1,23 @@
-.sub-hero {
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    text-align: center;
-    padding: 60px 20px;
-    position: relative;
-    overflow: hidden;
+/* Shared Layout */
+.sub-hero,
+.sub-intro,
+.sub-container,
+.sub-resources {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.sub-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, transparent 50%);
+/* Hero */
+.sub-hero {
+    background-color: var(--color-accent2);
+    background-image: url('images/hero-wavy-svg-001.svg');
+    background-repeat: no-repeat;
+    background-size: clamp(34.72rem, 111.11vw, 62.5rem);
+    background-position: top center;
+    color: var(--color-white);
+    text-align: center;
+    padding: 30px 20px clamp(6.08rem, 19.44vw, 10.94rem);
+    position: relative;
 }
 
 .sub-hero-content {
@@ -34,14 +40,13 @@
 }
 
 .sub-container {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Intro */
 .sub-intro {
-    padding: 60px 0;
-    background-color: var(--color-white);
+    padding: 6px 0;
+    background-color: var(--color-accent2);
 }
 
 .sub-intro-grid {
@@ -49,6 +54,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+    padding: 30px 20px 175px;
+    position: relative;
 }
 
 .sub-intro-text h2 {
@@ -76,30 +83,69 @@
     border: 2px dashed var(--color-gray-mid);
 }
 
-/* Resources Section */
+/* Resources */
 .sub-resources {
-    padding: 60px 0;
-    background-color: var(--color-black);
+    --resources-wave-width: clamp(34.72rem, 111.11vw, 62.5rem);
+    --resources-wave-cap-height: clamp(4rem, 10vw, 6.5rem);
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent var(--resources-wave-cap-height),
+        var(--color-black) var(--resources-wave-cap-height),
+        var(--color-black) calc(100% - var(--resources-wave-cap-height)),
+        transparent calc(100% - var(--resources-wave-cap-height)),
+        transparent 100%
+    );
     color: var(--color-white);
+    text-align: center;
+    padding: calc(var(--resources-wave-cap-height)) 20px calc(clamp(3.04rem, 9.72vw, 5.47rem) + var(--resources-wave-cap-height));
     position: relative;
+    margin-top: -150px;
+    overflow: hidden;
 }
 
-/* Undulating shape */
+.sub-resources > * {
+    position: relative;
+    z-index: 1;
+}
+
 .sub-resources::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: var(--color-black);
-    clip-path: ellipse(60% 100% at 50% 0%);
+    left: 50%;
+    width: var(--resources-wave-width);
+    height: var(--resources-wave-cap-height);
+    background-image: url('images/hero-wavy-svg-003.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.sub-resources::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: var(--resources-wave-width);
+    height: var(--resources-wave-cap-height);
+    background-image: url('images/hero-wavy-svg-003.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom center;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .sub-resources h2 {
     font-family: 'Slackey', 'Arial', sans-serif;
     font-size: 2rem;
     text-align: center;
+    padding-top: 10px;
     margin-bottom: 40px;
 }
 
@@ -139,10 +185,10 @@
     font-size: 0.9rem;
 }
 
-/* Comparison Section */
+/* Comparison */
 .sub-comparison {
     padding: 60px 0;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-white);
 }
 
 .sub-comparison h2 {
@@ -174,6 +220,9 @@
     padding: 30px 20px;
     text-align: center;
     border-top: 5px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
 }
 
 .comparison-card-green {
@@ -222,10 +271,6 @@
 @media (max-width: 768px) {
     .sub-intro-grid {
         grid-template-columns: 1fr;
-    }
-
-    .sub-intro-image {
-        order: -1;
     }
 
     .sub-resources-grid {
