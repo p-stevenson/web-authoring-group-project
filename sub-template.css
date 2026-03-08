@@ -275,6 +275,96 @@
     border-bottom: none;
 }
 
+/* Timeline */
+.timeline-section {
+    background-color: var(--color-white);
+    padding: 60px 0 80px;
+}
+
+.timeline-section h2 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+/* Timeline track */
+.timeline {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Horizontal line running through the dots */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 28px; /* vertically centred on the dot (dot is 56px tall) */
+    left: calc(50% - 42%); /* span roughly between the 3 dot centres */
+    width: 84%;
+    height: 2px;
+    background-color: var(--color-gray-light);
+    z-index: 0;
+}
+
+/* Items row */
+.timeline-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+/* Single milestone */
+.timeline-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Numbered dot */
+.timeline-dot {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24px;
+}
+
+.timeline-dot-green  { background-color: var(--color-green); }
+.timeline-dot-orange { background-color: var(--color-accent); }
+.timeline-dot-purple { background-color: var(--color-violet); }
+
+/* Label + description */
+.timeline-content h3 {
+    font-family: 'Slackey', 'Arial', sans-serif;
+    font-size: 0.95rem;
+    color: var(--color-brown);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .sub-intro-grid {
@@ -294,5 +384,36 @@
 
     .comparison-grid {
         grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        top: 0;
+        left: 27px;
+        width: 2px;
+        height: 100%;
+    }
+
+    .timeline-items {
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .timeline-dot {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .timeline-content p {
+        max-width: none;
+        margin: 0;
     }
 }
