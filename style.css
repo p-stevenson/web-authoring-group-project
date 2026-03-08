@@ -43,6 +43,7 @@ body {
     background-color: var(--color-white);
     padding: 15px 0;
     border-bottom: 2px solid var(--color-accent);
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.274);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -150,18 +151,18 @@ body {
     animation-delay: var(--delay);
 }
 
-.snow-icon:nth-child(1)  { --left: 3%;  --size: 14px; --scale: 0.9; --dur: 12s; --delay: -1s; }
-.snow-icon:nth-child(2)  { --left: 11%; --size: 16px; --scale: 1.6; --dur: 14s; --delay: -4s; }
-.snow-icon:nth-child(3)  { --left: 20%; --size: 15px; --scale: 1.1; --dur: 11s; --delay: -2s; }
+.snow-icon:nth-child(1)  { --left: 3%;  --size: 24px; --scale: 0.9; --dur: 12s; --delay: -1s; }
+.snow-icon:nth-child(2)  { --left: 11%; --size: 26px; --scale: 1.6; --dur: 14s; --delay: -4s; }
+.snow-icon:nth-child(3)  { --left: 20%; --size: 25px; --scale: 1.1; --dur: 11s; --delay: -2s; }
 .snow-icon:nth-child(4)  { --left: 28%; --size: 13px; --scale: 2;   --dur: 15s; --delay: -8s; }
-.snow-icon:nth-child(5)  { --left: 36%; --size: 14px; --scale: 1.4; --dur: 13s; --delay: -6s; }
+.snow-icon:nth-child(5)  { --left: 36%; --size: 24px; --scale: 1.4; --dur: 13s; --delay: -6s; }
 .snow-icon:nth-child(6)  { --left: 45%; --size: 12px; --scale: 0.8; --dur: 16s; --delay: -10s; }
-.snow-icon:nth-child(7)  { --left: 54%; --size: 15px; --scale: 1.9; --dur: 12s; --delay: -3s; }
+.snow-icon:nth-child(7)  { --left: 54%; --size: 25px; --scale: 1.9; --dur: 12s; --delay: -3s; }
 .snow-icon:nth-child(8)  { --left: 63%; --size: 13px; --scale: 1.2; --dur: 14s; --delay: -7s; }
 .snow-icon:nth-child(9)  { --left: 72%; --size: 14px; --scale: 1.7; --dur: 11s; --delay: -5s; }
-.snow-icon:nth-child(10) { --left: 81%; --size: 12px; --scale: 1;   --dur: 15s; --delay: -9s; }
+.snow-icon:nth-child(10) { --left: 81%; --size: 22px; --scale: 1;   --dur: 15s; --delay: -9s; }
 .snow-icon:nth-child(11) { --left: 89%; --size: 16px; --scale: 1.5; --dur: 13s; --delay: -11s; }
-.snow-icon:nth-child(12) { --left: 96%; --size: 13px; --scale: 2;   --dur: 16s; --delay: -12s; }
+.snow-icon:nth-child(12) { --left: 96%; --size: 23px; --scale: 2;   --dur: 16s; --delay: -12s; }
 
 .hero h1,
 .hero-text,
