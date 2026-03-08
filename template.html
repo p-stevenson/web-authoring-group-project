@@ -6,6 +6,7 @@
     <title>HOBBYCLUB - [HOBBY NAME]</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sub-template.css">
+    <link rel="stylesheet" href="template-timeline.css">
 </head>
 <body>
     <nav class="main-nav">
@@ -60,58 +61,60 @@
     <section class="sub-resources">
         <div class="sub-container">
             <h2>Resources & Guides</h2>
-            <div class="sub-resources-grid">
-                <div class="resource-card">
-                    <div class="resource-icon">🌐</div>
-                    <h3>Websites</h3>
-                    <p>Useful links to get started</p>
+            <div class="resource-link-layout">
+                <div class="resource-links resource-links-left">
+                    <a href="404.html" class="resource-link-item">[Link Label 1]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 2]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 3]</a>
                 </div>
-                <div class="resource-card">
-                    <div class="resource-icon">📚</div>
-                    <h3>Books</h3>
-                    <p>Recommended reading</p>
+                <div class="resource-circle-wrapper">
+                    <!-- Change circle-green to match the hobby: circle-green / circle-cyan / circle-orange / circle-purple -->
+                    <div class="circle circle-green resource-circle">
+                        <img src="images/yarn-2.svg" alt="[HOBBY]" class="hobby-svg svg-small svg-front">
+                    </div>
                 </div>
-                <div class="resource-card">
-                    <div class="resource-icon">📋</div>
-                    <h3>Terms</h3>
-                    <p>Key terminology</p>
+                <div class="resource-links resource-links-right">
+                    <a href="404.html" class="resource-link-item">[Link Label 4]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 5]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 6]</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
-    <section class="sub-comparison">
+    <!-- Timeline Section -->
+    <section class="sub-comparison timeline-section">
         <div class="sub-container">
-            <h2>Getting Started</h2>
-            <p class="sub-comparison-intro">Choose your path: budget options, time commitment, and difficulty levels</p>
-            <div class="comparison-grid">
-                <div class="comparison-card comparison-card-green">
-                    <h3>OPTION 1</h3>
-                    <p class="comparison-cost">€€</p>
-                    <ul>
-                        <li>Beginner friendly</li>
-                        <li>Low cost</li>
-                        <li>Quick start</li>
-                    </ul>
-                </div>
-                <div class="comparison-card comparison-card-orange">
-                    <h3>OPTION 2</h3>
-                    <p class="comparison-cost">€€€</p>
-                    <ul>
-                        <li>Intermediate level</li>
-                        <li>Moderate investment</li>
-                        <li>More features</li>
-                    </ul>
-                </div>
-                <div class="comparison-card comparison-card-purple">
-                    <h3>OPTION 3</h3>
-                    <p class="comparison-cost">€€€€</p>
-                    <ul>
-                        <li>Advanced</li>
-                        <li>Full experience</li>
-                        <li>Best results</li>
-                    </ul>
+            <h2>Start Your Journey</h2>
+            <p class="sub-comparison-intro">Three stages, your pace — here's where to begin</p>
+
+            <div class="timeline">
+                <div class="timeline-items">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot timeline-dot-green">1</div>
+                        <div class="timeline-content">
+                            <h3>BEGINNER</h3>
+                            <p>[Describe the first step: what to get, where to start, what to expect in the first week or session.]</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot timeline-dot-orange">2</div>
+                        <div class="timeline-content">
+                            <h3>ENTHUSIAST</h3>
+                            <p>[Describe the next stage: what changes, what new skills or gear to look at, what this level feels like.]</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot timeline-dot-purple">3</div>
+                        <div class="timeline-content">
+                            <h3>EXPERT</h3>
+                            <p>[Describe the advanced stage: what mastery looks like, where people at this level go next, community or competition.]</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
