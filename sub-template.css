@@ -199,9 +199,8 @@
 .resource-links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5px;
 }
+
 
 .resource-links-left {
     text-align: right;
@@ -211,10 +210,19 @@
     text-align: left;
 }
 
+.resource-links-left > hr {
+    width: 75%;
+    align-self: flex-end;
+}
+
+.resource-links-right > hr {
+    width: 75%;
+    align-self: flex-start;
+}
+
 .resource-link-item {
     color: var(--color-white);
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    text-decoration: none;
     font-size: 1rem;
     transition: color 0.2s;
 }
