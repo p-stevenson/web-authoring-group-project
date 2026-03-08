@@ -1,5 +1,41 @@
 # 5-page-hobby-website
 
+## Team Editing Guide
+
+Each teammate should edit only their own page file:
+
+- `gardening.html`
+- `hiking.html`
+- `travel.html`
+- `motorcycling.html`
+
+### What To Edit On Your Page
+
+Look for these markers and edit only inside those sections:
+
+- `<!-- EDIT ZONE: HERO (title + tagline) -->`
+- `<!-- EDIT ZONE: INTRO COPY + CAROUSEL CONTENT -->`
+- `<!-- EDIT ZONE: RESOURCES LINKS + CENTER ICON -->`
+- `<!-- EDIT ZONE: STARTER PATHWAY CONTENT -->`
+
+### Shared Files (Edit Carefully)
+
+- `style.css`: shared styles for all pages
+- `sub-template.css`: shared template styles for all hobby pages
+- `index.html`: homepage links/cards to each hobby page
+
+Only edit shared files if your whole team agrees, because changes affect everyone.
+
+### Image Tips
+
+- Put new images in `images/`
+- Use clear names, for example: `images/gardening-tools.jpg`
+- Update your page's carousel/image references only on your own page file
+
+### Quick Preview
+
+Open `index.html` in Live Server or your browser and click your hobby card to test your page.
+
 
 
 ## Getting started

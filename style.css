@@ -169,6 +169,7 @@ body {
 .snow-icon:nth-child(10) { --left: 81%; --size: 22px; --scale: 1;   --dur: 15s; --delay: -9s; }
 .snow-icon:nth-child(11) { --left: 89%; --size: 16px; --scale: 1.5; --dur: 13s; --delay: -11s; }
 .snow-icon:nth-child(12) { --left: 96%; --size: 23px; --scale: 2;   --dur: 16s; --delay: -12s; }
+.snow-icon:nth-child(13) { --left: 64%; --size: 20px; --scale: 2;   --dur: 14s; --delay: -8s; }
 
 .hero h1,
 .hero-text,
