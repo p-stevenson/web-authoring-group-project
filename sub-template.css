@@ -1,4 +1,5 @@
-/* Shared Layout */
+/* === SHARED LAYOUT === */
+/* Shared max-width keeps all major sections visually aligned. */
 .sub-hero,
 .sub-intro,
 .sub-container,
@@ -7,16 +8,16 @@
     margin: 0 auto;
 }
 
-/* Hero */
+/* === SUB-PAGE HERO === */
 .sub-hero {
     background-color: var(--color-accent2);
     background-image: url('images/hero-wavy-svg-001.svg');
     background-repeat: no-repeat;
-    background-size: clamp(34.72rem, 111.11vw, 62.5rem);
+    background-size: clamp(34.72rem, 111.11vw, 62.5rem); /* Fluid wave width across breakpoints. */
     background-position: top center;
     color: var(--color-white);
     text-align: center;
-    padding: 30px 20px clamp(6.08rem, 19.44vw, 10.94rem);
+    padding: 30px 20px clamp(6.08rem, 19.44vw, 10.94rem); /* Responsive bottom space for wave edge. */
     position: relative;
 }
 
@@ -27,7 +28,7 @@
 
 .sub-hero h1 {
     font-family: 'Slackey', 'Arial', sans-serif;
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Scales smoothly between mobile and desktop. */
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -43,7 +44,7 @@
     padding: 0 20px;
 }
 
-/* Intro */
+/* === INTRO === */
 .sub-intro {
     padding: 6px 0;
     background-color: var(--color-accent2);
@@ -54,7 +55,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
-    padding: 30px 20px 175px;
+    padding: 30px 20px 175px; /* Extra bottom room for the overlapping resources wave. */
     position: relative;
 }
 
@@ -71,6 +72,7 @@
     margin-bottom: 15px;
 }
 
+/* === IMAGE CAROUSEL === */
 .image-carousel {
     border: 5px solid white;
     border-radius: 12px;
@@ -81,14 +83,14 @@
 
 .carousel-track {
     display: flex;
-    width: 600%; /* 3 slides + 3 duplicates */
+    width: 600%; /* Three real slides plus three duplicates for seamless looping. */
     height: 100%;
     animation: carousel-scroll 25.5s linear infinite;
-    will-change: transform;
+    will-change: transform; /* Performance hint for smoother transform animation. */
 }
 
 @keyframes carousel-scroll {
-    /* Each slide holds for 8s, scrolls to next in 0.5s (25.5s total) */
+    /* Each slide holds for 8s, then scrolls for 0.5s (25.5s total cycle). */
     0%   { transform: translateX(0); }        /* slide 1 start */
     31%  { transform: translateX(0); }        /* slide 1 end (8s) */
     33%  { transform: translateX(-16.6667%); }/* slide 2 start */
@@ -100,7 +102,7 @@
 
 .carousel-slide {
     flex-shrink: 0;
-    width: calc(100% / 6); /* 1/6 of track = container width */
+    width: calc(100% / 6); /* One viewport-sized slide across a six-slide track. */
     height: 100%;
     display: flex;
     align-items: center;
@@ -113,22 +115,23 @@
     background-position: center;
 }
 
-/* Placeholder colours — replace with background-image once images are ready */
+/* Placeholder colors - replace with background-image once images are ready. */
 .carousel-slide-1 { background-color: var(--color-accent); }
 .carousel-slide-2 { background-color: var(--color-cyan); }
 .carousel-slide-3 { background-color: var(--color-violet); }
 
 @media (prefers-reduced-motion: reduce) {
+    /* Accessibility: disable automatic movement for motion-sensitive users. */
     .carousel-track {
         animation: none;
     }
 }
 
-/* Resources */
+/* === RESOURCES === */
 .sub-resources {
     --resources-wave-width: clamp(34.72rem, 111.11vw, 62.5rem);
-    --resources-wave-top-height: clamp(6rem, 16vw, 10rem);
-    --resources-wave-cap-height: clamp(4rem, 10vw, 6.5rem);
+    --resources-wave-top-height: clamp(6rem, 16vw, 10rem); /* Top wave stays taller to avoid clipping. */
+    --resources-wave-cap-height: clamp(4rem, 10vw, 6.5rem); /* Bottom wave cap height. */
     background-image: linear-gradient(
         to bottom,
         transparent 0,
@@ -142,13 +145,13 @@
     text-align: center;
     padding: calc(var(--resources-wave-top-height)) 20px calc(clamp(3.04rem, 9.72vw, 5.47rem) + var(--resources-wave-cap-height));
     position: relative;
-    margin-top: -150px;
+    margin-top: -150px; /* Overlaps intro section for a connected transition. */
     overflow: hidden;
 }
 
 .sub-resources > * {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Keeps content above decorative pseudo-element waves. */
 }
 
 .sub-resources::before {
@@ -224,7 +227,12 @@
     color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
+    margin-bottom: 2px; /* Keeps each divider tight to the link directly above it. */
     transition: color 0.2s;
+}
+
+.resource-links hr + .resource-link-item {
+    margin-top: 35px; /* Preserves larger spacing between divider and next link. */
 }
 
 .resource-link-item:hover {
@@ -242,7 +250,8 @@
     flex-shrink: 0;
 }
 
-/* Comparison */
+/* === SKILL PATHWAY CARDS (ALTERNATIVE LAYOUT) === */
+/* Optional alternative to the timeline section below. */
 .sub-comparison {
     padding: 60px 0;
     background-color: var(--color-white);
@@ -324,7 +333,7 @@
     border-bottom: none;
 }
 
-/* Timeline */
+/* === TIMELINE / GET STARTED === */
 .timeline-section {
     background-color: var(--color-white);
     padding: 60px 0 80px;
@@ -338,12 +347,12 @@
 .timeline::before {
     content: '';
     position: absolute;
-    top: 28px; /* centre on dot */
+    top: 28px; /* Center line on the timeline dots. */
     left: calc(50% - 42%);
     width: 84%;
     height: 2px;
     background-color: var(--color-gray-light);
-    z-index: 0;
+    z-index: 0; /* Line sits behind items and dots. */
 }
 
 .timeline-items {
@@ -351,7 +360,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Content layer above the connecting line. */
 }
 
 .timeline-item {
@@ -376,7 +385,7 @@
     flex-shrink: 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Dots stay above line and text. */
     margin-bottom: 24px;
 }
 
@@ -400,7 +409,7 @@
     margin: 0 auto;
 }
 
-/* Responsive */
+/* === RESPONSIVE (max-width: 768px) === */
 @media (max-width: 768px) {
     .sub-intro-grid {
         grid-template-columns: 1fr;
@@ -417,13 +426,23 @@
         text-align: center;
     }
 
+    .resource-links {
+        width: 60%;
+    }
+
+    .resource-links-left > hr,
+    .resource-links-right > hr {
+        width: 100%;
+        align-self: center;
+    }
+
     .comparison-grid {
         grid-template-columns: 1fr;
     }
 
     .timeline::before {
         top: 0;
-        left: 27px; /* vertical line behind dots */
+        left: 27px; /* Switches to a vertical line behind mobile dots. */
         width: 2px;
         height: 100%;
     }
