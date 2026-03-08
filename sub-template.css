@@ -86,19 +86,20 @@
 /* Resources */
 .sub-resources {
     --resources-wave-width: clamp(34.72rem, 111.11vw, 62.5rem);
+    --resources-wave-top-height: clamp(6rem, 16vw, 10rem);
     --resources-wave-cap-height: clamp(4rem, 10vw, 6.5rem);
     background-image: linear-gradient(
         to bottom,
         transparent 0,
-        transparent var(--resources-wave-cap-height),
-        var(--color-black) var(--resources-wave-cap-height),
+        transparent var(--resources-wave-top-height),
+        var(--color-black) var(--resources-wave-top-height),
         var(--color-black) calc(100% - var(--resources-wave-cap-height)),
         transparent calc(100% - var(--resources-wave-cap-height)),
         transparent 100%
     );
     color: var(--color-white);
     text-align: center;
-    padding: calc(var(--resources-wave-cap-height)) 20px calc(clamp(3.04rem, 9.72vw, 5.47rem) + var(--resources-wave-cap-height));
+    padding: calc(var(--resources-wave-top-height)) 20px calc(clamp(3.04rem, 9.72vw, 5.47rem) + var(--resources-wave-cap-height));
     position: relative;
     margin-top: -150px;
     overflow: hidden;
@@ -115,7 +116,7 @@
     top: 0;
     left: 50%;
     width: var(--resources-wave-width);
-    height: var(--resources-wave-cap-height);
+    height: var(--resources-wave-top-height);
     background-image: url('images/hero-wavy-svg-003.svg');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -144,8 +145,6 @@
 .sub-resources h2 {
     font-family: 'Slackey', 'Arial', sans-serif;
     font-size: 2rem;
-    text-align: center;
-    padding-top: 10px;
     margin-bottom: 40px;
 }
 
@@ -159,7 +158,8 @@
 .resource-links {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 5px;
 }
 
 .resource-links-left {
@@ -281,33 +281,22 @@
     padding: 60px 0 80px;
 }
 
-.timeline-section h2 {
-    font-family: 'Slackey', 'Arial', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    color: var(--color-brown);
-    margin-bottom: 10px;
-}
-
-/* Timeline track */
 .timeline {
     position: relative;
     margin-top: 50px;
 }
 
-/* Horizontal line running through the dots */
 .timeline::before {
     content: '';
     position: absolute;
-    top: 28px; /* vertically centred on the dot (dot is 56px tall) */
-    left: calc(50% - 42%); /* span roughly between the 3 dot centres */
+    top: 28px; /* centre on dot */
+    left: calc(50% - 42%);
     width: 84%;
     height: 2px;
     background-color: var(--color-gray-light);
     z-index: 0;
 }
 
-/* Items row */
 .timeline-items {
     display: flex;
     justify-content: space-between;
@@ -316,7 +305,6 @@
     z-index: 1;
 }
 
-/* Single milestone */
 .timeline-item {
     flex: 1;
     display: flex;
@@ -326,7 +314,6 @@
     padding: 0 20px;
 }
 
-/* Numbered dot */
 .timeline-dot {
     width: 56px;
     height: 56px;
@@ -348,7 +335,6 @@
 .timeline-dot-orange { background-color: var(--color-accent); }
 .timeline-dot-purple { background-color: var(--color-violet); }
 
-/* Label + description */
 .timeline-content h3 {
     font-family: 'Slackey', 'Arial', sans-serif;
     font-size: 0.95rem;
@@ -388,7 +374,7 @@
 
     .timeline::before {
         top: 0;
-        left: 27px;
+        left: 27px; /* vertical line behind dots */
         width: 2px;
         height: 100%;
     }
