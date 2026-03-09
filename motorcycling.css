@@ -1,0 +1,38 @@
+/* Motorcycling page overrides */
+/* Edit these variables to customize this page only. */
+body.hobby-motorcycling {
+    --sub-heading-font: 'Slackey', 'Arial', sans-serif;
+    --sub-body-font: 'Arial', sans-serif;
+
+    --sub-hero-bg: #e6e2f7;
+    --sub-hero-bg-image: url('images/motorcycling-sub-hero-wave.svg');
+    --sub-hero-text: #ffffff;
+    --sub-hero-title-size: clamp(2.4rem, 7.5vw, 4.2rem);
+    --sub-hero-tagline-size: clamp(1rem, 2.6vw, 1.3rem);
+
+    --sub-intro-bg: #e6e2f7;
+    --sub-intro-heading-size: 1.8rem;
+    --sub-intro-heading-color: #403766;
+    --sub-intro-text-size: 1rem;
+    --sub-intro-text-color: #2f2f38;
+
+    --sub-carousel-label-size: 0.85rem;
+
+    --sub-resources-heading-size: 2rem;
+    --sub-resource-link-size: 1rem;
+    --sub-resource-link-color: #ffffff;
+    --sub-resource-link-hover: #b3a7f0;
+
+    --sub-section-bg: #ffffff;
+    --sub-section-heading-size: 2rem;
+    --sub-section-heading-color: #403766;
+    --sub-section-intro-color: #64607e;
+
+    --sub-timeline-dot-1: #8cc63f;
+    --sub-timeline-dot-2: #f78d65;
+    --sub-timeline-dot-3: #7b68ee;
+    --sub-timeline-title-size: 0.95rem;
+    --sub-timeline-title-color: #403766;
+    --sub-timeline-text-size: 0.9rem;
+    --sub-timeline-text-color: #64607e;
+}

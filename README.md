@@ -26,6 +26,17 @@ Look for these markers and edit only inside those sections:
 
 Only edit shared files if your whole team agrees, because changes affect everyone.
 
+### Your Personal CSS File
+
+Each hobby page now has its own CSS file loaded after `sub-template.css`:
+
+- `gardening.css`
+- `hiking.css`
+- `travel.css`
+- `motorcycling.css`
+
+Edit variables in your own file to change your page only (font families, font sizes, colors, heading styles, and timeline dot colors).
+
 ### Image Tips
 
 - Put new images in `images/`
