@@ -451,10 +451,6 @@ body {
     font-size: 1.1rem;
 }
 
-.footer-info p {
-    font-size: 0.85rem;
-}
-
 .footer-links a {
     color: var(--color-gray-mid);
     text-decoration: none;

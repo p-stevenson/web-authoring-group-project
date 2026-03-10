@@ -291,89 +291,6 @@
     flex-shrink: 0;
 }
 
-/* === SKILL PATHWAY CARDS (ALTERNATIVE LAYOUT) === */
-/* Optional alternative to the timeline section below. */
-.sub-comparison {
-    padding: 60px 0;
-    background-color: var(--sub-section-bg);
-}
-
-.sub-comparison h2 {
-    font-family: var(--sub-heading-font);
-    font-size: var(--sub-section-heading-size);
-    text-align: center;
-    color: var(--sub-section-heading-color);
-    margin-bottom: 10px;
-}
-
-.sub-comparison-intro {
-    text-align: center;
-    color: var(--sub-section-intro-color);
-    margin-bottom: 40px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.comparison-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.comparison-card {
-    background-color: var(--color-white);
-    border-radius: 12px;
-    padding: 30px 20px;
-    text-align: center;
-    border-top: 5px solid;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
-    border-left: 2px solid;
-}
-
-.comparison-card-green {
-    border-color: var(--color-green);
-}
-
-.comparison-card-orange {
-    border-color: var(--color-accent);
-}
-
-.comparison-card-purple {
-    border-color: var(--color-violet);
-}
-
-.comparison-card h3 {
-    font-family: 'Slackey', 'Arial', sans-serif;
-    font-size: 1.3rem;
-    color: var(--color-brown);
-    margin-bottom: 15px;
-}
-
-.comparison-cost {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: var(--color-text);
-    margin-bottom: 20px;
-}
-
-.comparison-card ul {
-    list-style: none;
-    text-align: left;
-}
-
-.comparison-card li {
-    padding: 8px 0;
-    border-bottom: 1px solid var(--color-gray-light);
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-}
-
-.comparison-card li:last-child {
-    border-bottom: none;
-}
-
 /* === TIMELINE / GET STARTED === */
 .timeline-section {
     background-color: var(--sub-section-bg);
@@ -476,10 +393,6 @@
     .resource-links-right > hr {
         width: 100%;
         align-self: center;
-    }
-
-    .comparison-grid {
-        grid-template-columns: 1fr;
     }
 
     .timeline::before {
