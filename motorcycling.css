@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&display=swap');
+
 /* Motorcycling page overrides */
 /* Edit these variables to customize this page only. */
 body.hobby-motorcycling {
-    --sub-heading-font: 'Slackey', 'Arial', sans-serif;
+    --sub-heading-font: 'Oxanium', 'Arial', sans-serif;
     --sub-body-font: 'Arial', sans-serif;
 
     --sub-hero-bg: #e6e2f7;
@@ -35,4 +37,42 @@ body.hobby-motorcycling {
     --sub-timeline-title-color: #403766;
     --sub-timeline-text-size: 0.9rem;
     --sub-timeline-text-color: #64607e;
+}
+
+body.hobby-motorcycling .carousel-slide {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+body.hobby-motorcycling .carousel-slide span {
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(27, 22, 43, 0.84);
+    font-family: 'Slackey', 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+body.hobby-motorcycling .carousel-slide-1 {
+    background-image: url('images/motorcycling-training.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body.hobby-motorcycling .carousel-slide-2 {
+    background-image: url('images/motorcycle-gear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body.hobby-motorcycling .carousel-slide-3 {
+    background-image: url('images/motorcycling-roadcraft.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
