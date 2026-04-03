@@ -23,10 +23,9 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 
 ### Priority 2: Close the requirement gaps in structure and CSS
 
-- [ ] Add full site navigation to `404.html` so every page supports the same navigation structure.
-- [ ] Add at least one clear CSS `id` selector to demonstrate use of both class and id selectors in styling.
+- [x] Add at least one clear CSS `id` selector to demonstrate use of both class and id selectors in styling.
 - [ ] Consider wrapping the main content of each hobby sub-page in a `<main>` element for stronger semantic structure.
-- [ ] Review footer links and decide whether they should remain as placeholders or be replaced.
+- [x] Review footer links and keep them pointing to `404.html` for this project.
 
 ### Priority 3: Complete documentation and final deployment checks
 
@@ -47,7 +46,6 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 - [x] Main pages use semantic structure such as headings, sections, navigation, lists, and links.
 - [x] Home page navigation links to all four hobby sub-pages.
 - [x] Each hobby sub-page navigation links back to the home page and the other hobby pages.
-- [ ] Add full site navigation to `404.html` so every page supports the same navigation structure.
 - [ ] Consider wrapping the main content of each hobby sub-page in a `<main>` element for stronger semantic structure.
 
 ## Section 2. CSS Styling and Layout
@@ -56,7 +54,7 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 - [x] Typography, colors, backgrounds, borders, padding, and margins are implemented.
 - [x] Positioning techniques such as `relative`, `absolute`, and `sticky` are already used.
 - [x] The homepage layout now stretches `.hobby-selection` so the footer sits at the bottom on tall screens.
-- [ ] Add at least one clear CSS `id` selector to demonstrate use of both class and id selectors in styling.
+- [x] Add at least one clear CSS `id` selector to demonstrate use of both class and id selectors in styling.
 
 ## Section 3. Multimedia and Content Integration
 
@@ -80,7 +78,7 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 - [ ] Test all external resource links after deployment.
 - [ ] Test the mobile navigation menu after deployment.
 - [ ] Confirm any multimedia or animation elements behave correctly after deployment.
-- [ ] Replace unnecessary placeholder links to `404.html` where real destinations should exist.
+- [ ] Replace unnecessary placeholder links to `404.html` in content areas where real destinations should exist.
 
 ## Section 5. Maintenance Documentation
 
@@ -92,5 +90,5 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 ## Suggested Cleanups
 
 - [ ] Fix placeholder or inaccurate hobby-page text on Gardening, Hiking, and Travel where the copy does not match the page topic.
-- [ ] Review footer links and decide whether they should remain as placeholders or be replaced.
+- [x] Review footer links and keep them pointing to `404.html` for this project.
 - [ ] Do a final pass for spelling, consistency, and content quality across all pages.

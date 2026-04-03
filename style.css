@@ -49,6 +49,10 @@ body.home-page {
     flex-direction: column;
 }
 
+#hobbies {
+    scroll-margin-top: 110px;
+}
+
 /* === NAVIGATION === */
 .main-nav {
     background-color: var(--color-white);
