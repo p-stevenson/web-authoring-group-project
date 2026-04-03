@@ -391,11 +391,10 @@
 }
 
 .sub-video .sub-video-card {
-    background-color: var(--sub-hero-bg-image);
+    background-color: var(--sub-section-bg);
 }
 
 .sub-video-card {
-    /* background-color: var(--sub-hero-bg-image); */
     border: 1px solid var(--color-gray-light);
     border-radius: 18px;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
