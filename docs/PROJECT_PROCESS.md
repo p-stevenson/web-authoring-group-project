@@ -85,8 +85,9 @@ All four hobby sub-pages share a single layout defined in `sub-template.css`:
 - **Intro section** — two-column grid: text left, image carousel right
 - **Image carousel** — pure CSS animation (`@keyframes carousel-scroll`), 3 slides + 3 duplicates for seamless loop; `prefers-reduced-motion` respected
 - **Resources section** — overlapping wave design using `::before`/`::after` pseudo-elements and a CSS `linear-gradient` background
+- **Embedded video section** — shared responsive iframe wrapper between resources and the getting-started timeline
 - **Getting Started timeline** — vertical timeline with colour-coded milestone dots
-- **Accessibility:** `prefers-reduced-motion` disables carousel animation for motion-sensitive users
+- **Accessibility:** `prefers-reduced-motion` disables carousel animation for motion-sensitive users; video sections include descriptive headings and `iframe` titles
 
 ### 3.5 Per-Page Theme System
 
@@ -143,6 +144,7 @@ Key overrideable tokens per page:
 ├── hiking.css              # Hiking page palette & hero overrides
 ├── motorcycling.css        # Motorcycling page palette & hero overrides
 ├── travel.css              # Travel page palette & hero overrides
+├── checklist.md            # Requirement checklist and priority tracking
 ├── fonts/
 │   └── Slackey/            # Custom display font
 ├── images/
@@ -153,6 +155,7 @@ Key overrideable tokens per page:
 │   └── motorcycling-sub-hero-wave.svg
 ├── docs/
 │   ├── PROJECT_PROCESS.md
+│   ├── Website Technical Requirements Outline.txt
 │   └── website-plan.md
 ├── layout-options/         # Archived layout explorations
 │   ├── template-skillpath.html
@@ -174,7 +177,7 @@ Key overrideable tokens per page:
 
 ---
 
-## 7. Current Project Status (March 2026)
+## 7. Current Project Status (April 2026)
 
 ### Completed
 - [x] Home page (`index.html`) — hero, nav, hobby cards, illustration shelf, footer
@@ -186,10 +189,13 @@ Key overrideable tokens per page:
 - [x] Page-specific hero wave SVGs for Gardening, Hiking, Motorcycling
 - [x] CSS carousel (pure CSS, accessibility-aware)
 - [x] Responsive layout across all pages
+- [x] Embedded video section added to all four hobby sub-pages
+- [x] Motorcycling page updated with a live YouTube embed
 
 ### In Progress / Remaining
 - [ ] Replace carousel placeholder slides with real photographs
 - [ ] Fill in sub-page content (intro text, timeline entries, resource links)
+- [ ] Replace placeholder video embeds on Gardening, Hiking, and Travel with final clips
 - [ ] Travel page hero wave SVG (currently using shared fallback)
 - [ ] Final cross-browser / mobile testing
 
@@ -200,7 +206,7 @@ Key overrideable tokens per page:
 - [ ] Add page-specific content (not just Lorem Ipsum)
 - [ ] Implement dark mode via `prefers-color-scheme`
 - [ ] Add hover micro-interactions on hobby cards
-- [ ] Create a proper 404 page
+- [ ] Add full site navigation to the 404 page
 
 ---
 
@@ -235,4 +241,4 @@ Key overrideable tokens per page:
 
 ---
 
-*Last updated: March 2026*
+*Last updated: April 2026*

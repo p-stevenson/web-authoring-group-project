@@ -2,7 +2,7 @@
 
 ## Team Editing Guide
 
-Each team member scan edit their own page file:
+Each team member can edit their own page file:
 
 - `gardening.html`
 - `hiking.html`
@@ -16,6 +16,7 @@ These markers in your html files highlight areas you'll want to edit:
 - `<!-- EDIT ZONE: HERO (title + tagline) -->`
 - `<!-- EDIT ZONE: INTRO COPY + CAROUSEL CONTENT -->`
 - `<!-- EDIT ZONE: RESOURCES LINKS + CENTER ICON -->`
+- `<!-- EDIT ZONE: EMBEDDED VIDEO -->`
 - `<!-- EDIT ZONE: STARTER PATHWAY CONTENT -->`
 
 ### Shared Files (Edit Carefully)
@@ -23,6 +24,7 @@ These markers in your html files highlight areas you'll want to edit:
 - `style.css`: shared styles for all pages
 - `sub-template.css`: shared template styles for all hobby pages
 - `index.html`: homepage links/cards to each hobby page
+- `checklist.md`: tracks remaining requirement work and priorities
 
 Changes to these files affect everyone.
 
@@ -43,9 +45,15 @@ Edit variables in your own file to change your page only (font families, font si
 - Use clear names, for example: `images/gardening-tools.jpg`
 - Update your page's carousel/image references only on your own page file
 
+### Video Tips
+
+- Each hobby page now includes an embedded video section
+- Replace only the `iframe` on your own page when you are ready to use a real video
+- Keep the homepage free of embedded video
+
 ### Quick Preview
 
-Open `index.html` in Live Server or your browser and click your hobby card or nav-link to your page to test.
+Open `index.html` in Live Server or your browser and click your hobby card or nav-link to your page to test. Check your page's video section as well as the navigation and layout.
 
 
 # Editing this README

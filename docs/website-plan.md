@@ -23,15 +23,18 @@
 - Header (same as homepage)
 - Hero/image section specific to the hobby
 - Content area for text + images
+- Resources section
+- Embedded video section
+- Getting Started timeline
 - Footer (same as homepage)
 
 ---
 
 ## Sub-Page Topics
-1. Knitting (was Sewing)
-2. Models (was Aeromodelling)
-3. Cinema (was Photography)
-4. Gaming
+1. Gardening
+2. Hiking
+3. Travel
+4. Motorcycling
 
 ---
 
@@ -48,15 +51,17 @@
 - [x] Test in browser
 
 ### Phase 2: Sub-Page Template
-- [ ] Review reference layouts in `reference/` folder
-- [ ] Create reusable HTML structure
-- [ ] Create sub-page CSS (or extend main CSS)
-- [ ] Ensure consistent header/footer
-- [ ] Copy template to each hobby page
+- [x] Review reference layouts in `reference/` folder
+- [x] Create reusable HTML structure
+- [x] Create sub-page CSS (or extend main CSS)
+- [x] Ensure consistent header/footer
+- [x] Copy template to each hobby page
+- [x] Add embedded video section structure to all hobby pages
 
 ### Phase 3: Content
 - [ ] Populate each sub-page with content
 - [ ] Add appropriate images/SVGs
+- [ ] Replace placeholder video embeds with final page-specific videos where needed
 
 ### Phase 4: Final Review
 - [ ] Check all links work
@@ -88,21 +93,28 @@
 ## File Structure
 ```
 /
-├── index.html          # Homepage ✅
-├── 404.html           # Custom 404 page ✅
-├── reference/         # Layout reference materials
-│   ├── home-page.png
-│   ├── 5-layout-options.png
-│   └── hobby-page-rough-draft-001.jpg
-├── sewing.html        # Knitting page (placeholder → 404)
-├── aeromodelling.html # Models page (placeholder → 404)
-├── photography.html   # Cinema page (placeholder → 404)
-├── gaming.html        # Gaming page (placeholder → 404)
-├── style.css          # Main stylesheet
+├── index.html              # Homepage
+├── gardening.html          # Gardening sub-page
+├── hiking.html             # Hiking sub-page
+├── travel.html             # Travel sub-page
+├── motorcycling.html       # Motorcycling sub-page
+├── 404.html                # Custom 404 page
+├── style.css               # Main stylesheet
+├── sub-template.css        # Shared hobby-page layout and video styles
+├── gardening.css           # Gardening theme overrides
+├── hiking.css              # Hiking theme overrides
+├── travel.css              # Travel theme overrides
+├── motorcycling.css        # Motorcycling theme overrides
+├── checklist.md            # Requirement checklist
 ├── fonts/
-│   └── Slackey/       # Custom display font
-└── images/
-    └── *.svg          # Custom SVG icons
+│   └── Slackey/            # Custom display font
+├── images/
+│   └── *.svg / *.jpg       # Shared icons and images
+├── docs/
+│   ├── PROJECT_PROCESS.md
+│   ├── Website Technical Requirements Outline.txt
+│   └── website-plan.md
+└── reference/              # Layout reference materials
 ```
 
 ---
@@ -113,7 +125,8 @@ Wireframe structure (from `hobby-page-rough-draft-001.jpg`):
 1. **Hero** — Hobby title + visual
 2. **Intro** — Introduction to the hobby + autoscroll image
 3. **Resources** — Images + links to external resources
-4. **Comparison** — 3 options (costs, difficulty, barrier to entry)
+4. **Video** — Embedded video tutorial or introduction
+5. **Comparison / Getting Started** — 3 stages for beginner progression
 
 5 layout variants available in `5-layout-options.png`.
 

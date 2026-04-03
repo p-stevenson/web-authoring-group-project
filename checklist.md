@@ -6,8 +6,8 @@ Use this file to track the remaining work needed to fully satisfy the project re
 
 ### Priority 1: Finish the website content and real destinations
 
-- [ ] Add an embedded video component to each hobby sub-page: Gardening, Hiking, Travel, and Motorcycling.
-- [ ] Keep the homepage free of embedded video so multimedia is focused on the four sub-pages only.
+- [x] Add an embedded video component to each hobby sub-page: Gardening, Hiking, Travel, and Motorcycling.
+- [x] Keep the homepage free of embedded video so multimedia is focused on the four sub-pages only.
 - [ ] Choose a relevant video topic for each hobby page so the embed supports the page content naturally.
 - [ ] Test each embedded video on desktop and mobile.
 - [ ] Replace placeholder intro paragraphs on all hobby pages with final written content.
@@ -58,9 +58,9 @@ Use this file to track the remaining work needed to fully satisfy the project re
 
 - [x] The website already includes animation as multimedia.
 - [x] Existing images include `alt` text.
-- [ ] Add an embedded video component to each hobby sub-page.
-- [ ] Do not add the embedded video component to the homepage.
-- [ ] Add an accessible title or surrounding heading/text for each embedded video.
+- [x] Add an embedded video component to each hobby sub-page.
+- [x] Do not add the embedded video component to the homepage.
+- [x] Add an accessible title or surrounding heading/text for each embedded video.
 - [ ] Confirm each embedded video is relevant to the hobby page where it is placed.
 - [ ] Replace placeholder intro paragraphs on all hobby pages with final written content.
 - [ ] Replace placeholder carousel slides (`IMAGE 1`, `IMAGE 2`, `IMAGE 3`) with real hobby images.
