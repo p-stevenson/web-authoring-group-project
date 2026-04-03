@@ -21,12 +21,13 @@
 |----------|-----------|
 | Rebranded from "HOBBYHUB" → "HOBBYCLUB" | More inclusive, community-focused feel |
 | Husky logo (SVG) | Replaces generic crown emoji; adds personality |
-| "No JS allowed" footer badge | Pride in pure HTML/CSS — aligns with assignment constraints |
+| Minimal static footer | Keeps the layout clean while leaving legal links as simple placeholders for this assignment |
 
 ### 2.2 Typography
 
 - **Primary Font:** Slackey (display/headings) — playful, chunky, fits hobby theme
 - **Fallback:** Arial (body text) — readability, universal support
+- **Motorcycling override:** Oxanium for headings and Barlow Semi Condensed for resource links — gives the reference page a more mechanical feel without changing the whole site
 
 ### 2.3 Color Palette
 
@@ -47,6 +48,8 @@
 - **Card-based hobby selection** — clear visual hierarchy
 - **Hero section with illustration shelf** — visual interest without images
 - **Mobile-first responsive** — works on phones from the start
+- **Homepage-only flex layout** — keeps the homepage footer at the bottom on tall screens without affecting sub-page layout
+- **In-page jump target** — the `READ MORE` button links to `#hobbies`, which is also used as the project's clear CSS `id` selector example
 
 ---
 
@@ -83,7 +86,7 @@ All four hobby sub-pages share a single layout defined in `sub-template.css`:
 
 - **Hero section** — full-width with wave SVG background, large title and tagline
 - **Intro section** — two-column grid: text left, image carousel right
-- **Image carousel** — pure CSS animation (`@keyframes carousel-scroll`), 3 slides + 3 duplicates for seamless loop; `prefers-reduced-motion` respected
+- **Image carousel** — pure CSS animation (`@keyframes carousel-scroll`), 3 slides + 3 duplicates for seamless loop; `prefers-reduced-motion` respected; current shared sizing uses a responsive width-based carousel frame
 - **Resources section** — overlapping wave design using `::before`/`::after` pseudo-elements and a CSS `linear-gradient` background
 - **Embedded video section** — shared responsive iframe wrapper between resources and the getting-started timeline
 - **Getting Started timeline** — vertical timeline with colour-coded milestone dots
@@ -97,7 +100,7 @@ Each hobby page has its own CSS file that overrides shared design tokens on a sc
 |------|-----------|-------------|
 | Gardening | `hobby-gardening` | Soft greens `#c6e6b4` |
 | Hiking | `hobby-hiking` | Cool blues `#b8d7de` |
-| Motorcycling | `hobby-motorcycling` | Muted purples `#c8c2e9` |
+| Motorcycling | `hobby-motorcycling` | Muted purples `#e6e2f7` |
 | Travel | `hobby-travel` | Warm peach `#f4c7a7` |
 
 Key overrideable tokens per page:
@@ -105,10 +108,12 @@ Key overrideable tokens per page:
 - `--sub-hero-bg-image` — hero wave SVG (each page can use a distinct wave asset)
 - `--sub-intro-bg`, heading colors, text colors, timeline dot colors, etc.
 
+The motorcycling page currently goes further than the other three by overriding typography, resource-link styling, and carousel backgrounds with final content and real images.
+
 ### 3.6 Custom 404 Page
 
 - Styled to match site branding
-- Links back to home and hobby pages
+- Used as the placeholder destination for footer legal links in this assignment version
 
 ---
 
@@ -149,10 +154,14 @@ Key overrideable tokens per page:
 │   └── Slackey/            # Custom display font
 ├── images/
 │   ├── *.svg               # Shared icons (yarn, rocket, husky, etc.)
+│   ├── *.jpg               # Hobby photos, including the motorcycling carousel images
 │   ├── hero-wavy-svg-*.svg # Shared hero wave graphics
 │   ├── gardening-sub-hero-wave.svg
 │   ├── hiking-sub-hero-wave.svg
-│   └── motorcycling-sub-hero-wave.svg
+│   ├── motorcycling-sub-hero-wave.svg
+│   ├── motorcycle-gear.jpg
+│   ├── motorcycling-roadcraft.jpg
+│   └── motorcycling-training.jpg
 ├── docs/
 │   ├── PROJECT_PROCESS.md
 │   ├── Website Technical Requirements Outline.txt
@@ -181,6 +190,8 @@ Key overrideable tokens per page:
 
 ### Completed
 - [x] Home page (`index.html`) — hero, nav, hobby cards, illustration shelf, footer
+- [x] Homepage `READ MORE` button links to the `#hobbies` section
+- [x] Homepage layout adjusted so the hobby section stretches and keeps the footer at the bottom on tall screens
 - [x] Custom 404 page
 - [x] Sub-page template system (`sub-template.css`) — hero, intro, carousel, resources, timeline
 - [x] Four hobby sub-pages created: Gardening, Hiking, Motorcycling, Travel
@@ -191,22 +202,25 @@ Key overrideable tokens per page:
 - [x] Responsive layout across all pages
 - [x] Embedded video section added to all four hobby sub-pages
 - [x] Motorcycling page updated with a live YouTube embed
+- [x] Motorcycling page filled out with final intro copy, real Irish/UK/European resource links, and complete timeline text
+- [x] Motorcycling carousel updated to use real photography and custom page-level font overrides
+- [x] README, plan, and process docs updated with maintenance guidance and current project status
 
 ### In Progress / Remaining
-- [ ] Replace carousel placeholder slides with real photographs
-- [ ] Fill in sub-page content (intro text, timeline entries, resource links)
+- [ ] Replace carousel placeholder slides with real photographs on Gardening, Hiking, and Travel
+- [ ] Fill in sub-page content on Gardening, Hiking, and Travel (intro text, timeline entries, resource links)
 - [ ] Replace placeholder video embeds on Gardening, Hiking, and Travel with final clips
-- [ ] Travel page hero wave SVG (currently using shared fallback)
+- [ ] Consider adding `<main>` wrappers to the hobby sub-pages for stronger semantics
 - [ ] Final cross-browser / mobile testing
 
 ---
 
 ## 8. Future Improvements (If Time Permits)
 
-- [ ] Add page-specific content (not just Lorem Ipsum)
+- [ ] Complete the remaining three hobby pages to the same standard as Motorcycling
 - [ ] Implement dark mode via `prefers-color-scheme`
 - [ ] Add hover micro-interactions on hobby cards
-- [ ] Add full site navigation to the 404 page
+- [ ] Replace remaining placeholder content links with real destinations
 
 ---
 
@@ -238,6 +252,10 @@ Key overrideable tokens per page:
 | `2ef0c73` | CSS comments added, resource spacing refined |
 | `445f4e6` | **Four hobby sub-pages created** (Gardening, Hiking, Motorcycling, Travel); home page topics updated |
 | `5fb7c17` | **Per-page CSS files added**; `--sub-hero-bg-image` token introduced for per-page hero wave overrides |
+| `45b7c50` | Embedded video section added across the hobby pages |
+| `89acdfd` | Motorcycling page content, carousel imagery, and page-specific fonts refined |
+| `b9b00ab` | Motorcycling resources link font updated |
+| `3abf502` | Homepage `#hobbies` id selector and checklist updates |
 
 ---
 

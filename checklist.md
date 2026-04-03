@@ -29,10 +29,10 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 
 ### Priority 3: Complete documentation and final deployment checks
 
-- [ ] Add documentation explaining how to update existing text.
-- [ ] Add documentation explaining how to create and link a new webpage.
-- [ ] Add documentation explaining how to insert and resize new images.
-- [ ] Add documentation explaining how to re-upload updated files to replace the old server version.
+- [x] Add documentation explaining how to update existing text.
+- [x] Add documentation explaining how to create and link a new webpage.
+- [x] Add documentation explaining how to insert and resize new images.
+- [x] Add documentation explaining how to re-upload updated files to replace the old server version.
 - [ ] Upload the completed website to the required web or local server using FTP.
 - [ ] Test all internal links after deployment.
 - [ ] Test all external resource links after deployment.
@@ -82,10 +82,10 @@ Current status: `motorcycling.html` is the strongest example page and now includ
 
 ## Section 5. Maintenance Documentation
 
-- [ ] Add documentation explaining how to update existing text.
-- [ ] Add documentation explaining how to create and link a new webpage.
-- [ ] Add documentation explaining how to insert and resize new images.
-- [ ] Add documentation explaining how to re-upload updated files to replace the old server version.
+- [x] Add documentation explaining how to update existing text.
+- [x] Add documentation explaining how to create and link a new webpage.
+- [x] Add documentation explaining how to insert and resize new images.
+- [x] Add documentation explaining how to re-upload updated files to replace the old server version.
 
 ## Suggested Cleanups
 
