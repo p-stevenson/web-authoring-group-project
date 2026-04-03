@@ -43,6 +43,12 @@ body {
     color: var(--color-text);
 }
 
+body.home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* === NAVIGATION === */
 .main-nav {
     background-color: var(--color-white);
@@ -378,6 +384,12 @@ body {
     background-color: var(--color-white);
 }
 
+body.home-page .hobby-selection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 .hobby-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -385,6 +397,10 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 40px;
+}
+
+body.home-page .hobby-container {
+    width: 100%;
 }
 
 .hobby-item {

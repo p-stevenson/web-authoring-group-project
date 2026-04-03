@@ -2,21 +2,24 @@
 
 Use this file to track the remaining work needed to fully satisfy the project requirements.
 
+Current status: `motorcycling.html` is the strongest example page and now includes final copy, real regional resource links, a live video embed, and real carousel images. The homepage footer-height fix has been restored and scoped to the homepage only.
+
 ## Priority Order
 
 ### Priority 1: Finish the website content and real destinations
 
 - [x] Add an embedded video component to each hobby sub-page: Gardening, Hiking, Travel, and Motorcycling.
 - [x] Keep the homepage free of embedded video so multimedia is focused on the four sub-pages only.
-- [ ] Choose a relevant video topic for each hobby page so the embed supports the page content naturally.
+- [x] Finalise the motorcycling page as the reference sub-page with real content, resources, and imagery.
+- [ ] Choose a relevant video topic for Gardening, Hiking, and Travel so each embed supports the page content naturally.
 - [ ] Test each embedded video on desktop and mobile.
-- [ ] Replace placeholder intro paragraphs on all hobby pages with final written content.
-- [ ] Replace placeholder timeline or pathway descriptions with final content.
-- [ ] Replace placeholder resource link labels with real resource names.
+- [ ] Replace placeholder intro paragraphs on Gardening, Hiking, and Travel with final written content.
+- [ ] Replace placeholder timeline or pathway descriptions on Gardening, Hiking, and Travel with final content.
+- [ ] Replace placeholder resource link labels on Gardening, Hiking, and Travel with real resource names.
 - [ ] Replace unnecessary placeholder links to `404.html` where real destinations should exist.
-- [ ] Replace placeholder carousel slides (`IMAGE 1`, `IMAGE 2`, `IMAGE 3`) with real hobby images.
+- [ ] Replace placeholder carousel slides on Gardening, Hiking, and Travel with real hobby images.
 - [ ] Make sure all new images are relevant and properly sized.
-- [ ] Fix placeholder or inaccurate hobby-page text where the copy does not match the page topic.
+- [ ] Fix placeholder or inaccurate hobby-page text on Gardening, Hiking, and Travel.
 
 ### Priority 2: Close the requirement gaps in structure and CSS
 
@@ -52,6 +55,7 @@ Use this file to track the remaining work needed to fully satisfy the project re
 - [x] CSS is used consistently across the website.
 - [x] Typography, colors, backgrounds, borders, padding, and margins are implemented.
 - [x] Positioning techniques such as `relative`, `absolute`, and `sticky` are already used.
+- [x] The homepage layout now stretches `.hobby-selection` so the footer sits at the bottom on tall screens.
 - [ ] Add at least one clear CSS `id` selector to demonstrate use of both class and id selectors in styling.
 
 ## Section 3. Multimedia and Content Integration
@@ -61,12 +65,13 @@ Use this file to track the remaining work needed to fully satisfy the project re
 - [x] Add an embedded video component to each hobby sub-page.
 - [x] Do not add the embedded video component to the homepage.
 - [x] Add an accessible title or surrounding heading/text for each embedded video.
+- [x] Motorcycling now uses a real video, real resource links, and real carousel photography.
 - [ ] Confirm each embedded video is relevant to the hobby page where it is placed.
-- [ ] Replace placeholder intro paragraphs on all hobby pages with final written content.
-- [ ] Replace placeholder carousel slides (`IMAGE 1`, `IMAGE 2`, `IMAGE 3`) with real hobby images.
+- [ ] Replace placeholder intro paragraphs on Gardening, Hiking, and Travel with final written content.
+- [ ] Replace placeholder carousel slides on Gardening, Hiking, and Travel with real hobby images.
 - [ ] Make sure all new images are relevant and properly sized.
-- [ ] Replace placeholder resource link labels with real resource names.
-- [ ] Replace placeholder timeline or pathway descriptions with final content.
+- [ ] Replace placeholder resource link labels on Gardening, Hiking, and Travel with real resource names.
+- [ ] Replace placeholder timeline or pathway descriptions on Gardening, Hiking, and Travel with final content.
 
 ## Section 4. Deployment and Functionality
 
@@ -86,6 +91,6 @@ Use this file to track the remaining work needed to fully satisfy the project re
 
 ## Suggested Cleanups
 
-- [ ] Fix placeholder or inaccurate hobby-page text where the copy does not match the page topic.
+- [ ] Fix placeholder or inaccurate hobby-page text on Gardening, Hiking, and Travel where the copy does not match the page topic.
 - [ ] Review footer links and decide whether they should remain as placeholders or be replaced.
 - [ ] Do a final pass for spelling, consistency, and content quality across all pages.
