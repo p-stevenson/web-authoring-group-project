@@ -1,0 +1,26 @@
+﻿The technical requirements for the website are categorized into structure, styling, multimedia, and deployment. To meet the standards for the Web Authoring project, the following elements must be implemented:
+1. HTML Standards and Structure
+The website must be built using current HTML standards with a clear, multi-page architecture.
+* Document Structure: Every page must include the mandatory structural tags: <!DOCTYPE html>, <html>, <head>, and <body>.
+* Semantic Elements: Use appropriate tags for content organization, including headings, lists, and links.
+* Navigation: A logical navigation solution must be present, allowing users to move easily between the home page and all sub-pages as defined in the site map.
+2. CSS Styling and Layout
+Styling must be handled through CSS to ensure a consistent user interface across the site.
+* Selectors: Use of both class and id selectors to apply styles.
+* Typography and Visuals: Implementation of specific font properties (size, family, color), background properties, and borders.
+* Positioning: Elements must be positioned using techniques such as absolute, relative, static, fixed, or float.
+* The Box Model: Precise control of layout using padding and margins.
+3. Multimedia and Content Integration
+Beyond standard text, the site must include integrated media elements.
+* Media Types: You must incorporate at least one form of multimedia: video, audio, animation, or embedded content (e.g., an iframe or external widget).
+* Image Optimization: Images must be relevant, properly sized, and include alt text for accessibility.
+4. Deployment and Functionality
+The project requires the site to be fully operational in a live environment.
+* FTP Upload: The entire site must be uploaded to a web or local server using File Transfer Protocol (FTP).
+* Functional Testing: All internal and external links, navigation menus, and media players must be tested to ensure they work correctly after deployment.
+5. Maintenance Requirements
+The technical documentation must demonstrate that the site is built for longevity by outlining how to:
+* Update existing text.
+* Create and link new webpages.
+* Insert and resize new images.
+* Re-upload updated files to the server to replace old versions.

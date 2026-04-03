@@ -368,6 +368,63 @@
     margin: 0 auto;
 }
 
+/* === EMBEDDED VIDEO === */
+.sub-video {
+    background-color: var(--sub-section-bg);
+    padding: 0 0 90px;
+}
+
+.sub-video .sub-video-card {
+    background-color: var(--sub-hero-bg);
+}
+
+.sub-video-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    border-radius: 18px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+}
+
+.sub-video h2 {
+    font-family: var(--sub-heading-font);
+    font-size: var(--sub-section-heading-size);
+    color: var(--sub-section-heading-color);
+    margin-bottom: 14px;
+}
+
+.sub-video-intro,
+.sub-video-note {
+    font-family: var(--sub-body-font);
+    color: var(--sub-section-intro-color);
+    line-height: 1.7;
+}
+
+.sub-video-intro {
+    margin-bottom: 22px;
+    max-width: 760px;
+}
+
+.sub-video-embed {
+    aspect-ratio: 16 / 9;
+    background-color: #1f1b2d;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.sub-video-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.sub-video-note {
+    margin-top: 14px;
+    font-size: 0.92rem;
+}
+
 /* === RESPONSIVE (max-width: 768px) === */
 @media (max-width: 768px) {
     .sub-intro-grid {
@@ -424,5 +481,9 @@
     .timeline-content p {
         max-width: none;
         margin: 0;
+    }
+
+    .sub-video-card {
+        padding: 22px;
     }
 }

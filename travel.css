@@ -10,7 +10,7 @@ body.hobby-travel {
     --sub-hero-title-size: clamp(2.4rem, 7.5vw, 4.2rem);
     --sub-hero-tagline-size: clamp(1rem, 2.6vw, 1.3rem);
 
-    --sub-intro-bg: #fbe7d8;
+    --sub-intro-bg: #f4c7a7;
     --sub-intro-heading-size: 1.8rem;
     --sub-intro-heading-color: #6a3f2c;
     --sub-intro-text-size: 1rem;
