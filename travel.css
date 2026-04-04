@@ -1,38 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
 /* Travel page overrides */
 /* Edit these variables to customize this page only. */
 body.hobby-travel {
-    --sub-heading-font: 'Slackey', 'Arial', sans-serif;
+    --sub-heading-font: 'Space Grotesk', 'Slackey', 'Arial', sans-serif;
     --sub-body-font: 'Arial', sans-serif;
 
-    --sub-hero-bg: #f4c7a7;
+    --sub-hero-bg: #efc5a7;
     --sub-hero-bg-image: url('images/sub-hero-wave.svg');
     --sub-hero-text: #ffffff;
     --sub-hero-title-size: clamp(2.4rem, 7.5vw, 4.2rem);
     --sub-hero-tagline-size: clamp(1rem, 2.6vw, 1.3rem);
 
-    --sub-intro-bg: #f4c7a7;
+    --sub-intro-bg: #efc5a7;
     --sub-intro-heading-size: 1.8rem;
-    --sub-intro-heading-color: #6a3f2c;
+    --sub-intro-heading-color: #5d3a34;
     --sub-intro-text-size: 1rem;
-    --sub-intro-text-color: #49342b;
+    --sub-intro-text-color: #3f2f2a;
 
     --sub-carousel-label-size: 0.85rem;
 
     --sub-resources-heading-size: 2rem;
-    --sub-resource-link-size: 1rem;
+    --sub-resource-link-size: 1.08rem;
     --sub-resource-link-color: #ffffff;
-    --sub-resource-link-hover: #fcd4bb;
+    --sub-resource-link-hover: #fce2c7;
 
     --sub-section-bg: #ffffff;
     --sub-section-heading-size: 2rem;
-    --sub-section-heading-color: #6a3f2c;
-    --sub-section-intro-color: #7a5a4d;
+    --sub-section-heading-color: #5d3a34;
+    --sub-section-intro-color: #6d5449;
 
     --sub-timeline-dot-1: #8cc63f;
     --sub-timeline-dot-2: #f78d65;
     --sub-timeline-dot-3: #7b68ee;
     --sub-timeline-title-size: 0.95rem;
-    --sub-timeline-title-color: #6a3f2c;
+    --sub-timeline-title-color: #5d3a34;
     --sub-timeline-text-size: 0.9rem;
-    --sub-timeline-text-color: #7a5a4d;
+    --sub-timeline-text-color: #6d5449;
+}
+
+body.hobby-travel .carousel-slide {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+body.hobby-travel .carousel-slide span {
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(30, 39, 59, 0.78);
+    font-family: 'Space Grotesk', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: right;
+}
+
+body.hobby-travel .carousel-slide-1 {
+    background-image: linear-gradient(135deg, #3f5e78 0%, #6a7ba2 40%, #f0b26f 100%);
+}
+
+body.hobby-travel .carousel-slide-2 {
+    background-image: linear-gradient(135deg, #1c7c86 0%, #4ab0a7 45%, #f2ddae 100%);
+}
+
+body.hobby-travel .carousel-slide-3 {
+    background-image: linear-gradient(135deg, #51416b 0%, #7c5a8f 40%, #ec8f6a 100%);
+}
+
+body.hobby-travel .resource-link-item {
+    font-family: 'Barlow Semi Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-variant-caps: all-small-caps;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
 }
