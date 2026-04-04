@@ -125,7 +125,6 @@
 /* === IMAGE CAROUSEL === */
 .image-carousel {
     width: 100%;
-    max-width: 100%;
     border: 5px solid white;
     border-radius: 12px;
     aspect-ratio: 4 / 3;
@@ -265,13 +264,16 @@
     text-align: left;
 }
 
-.resource-links-left > hr {
+.resource-links-left > hr,
+.resource-links-right > hr {
     width: 75%;
+}
+
+.resource-links-left > hr {
     align-self: flex-end;
 }
 
 .resource-links-right > hr {
-    width: 75%;
     align-self: flex-start;
 }
 
@@ -401,11 +403,8 @@
     padding: 0 0 90px;
 }
 
-.sub-video .sub-video-card {
-    background-color: var(--sub-section-bg);
-}
-
 .sub-video-card {
+    background-color: var(--sub-section-bg);
     border: 1px solid var(--color-gray-light);
     border-radius: 18px;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
