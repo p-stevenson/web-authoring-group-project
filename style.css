@@ -167,19 +167,12 @@ body.home-page {
     animation-delay: var(--delay);
 }
 
-.snow-icon:nth-child(1)  { --left: 3%;  --size: 24px; --scale: 0.9; --dur: 12s; --delay: -1s; }
-.snow-icon:nth-child(2)  { --left: 11%; --size: 26px; --scale: 1.6; --dur: 14s; --delay: -4s; }
-.snow-icon:nth-child(3)  { --left: 20%; --size: 25px; --scale: 1.1; --dur: 11s; --delay: -2s; }
-.snow-icon:nth-child(4)  { --left: 28%; --size: 13px; --scale: 2;   --dur: 15s; --delay: -8s; }
-.snow-icon:nth-child(5)  { --left: 36%; --size: 24px; --scale: 1.4; --dur: 13s; --delay: -6s; }
-.snow-icon:nth-child(6)  { --left: 45%; --size: 12px; --scale: 0.8; --dur: 16s; --delay: -10s; }
-.snow-icon:nth-child(7)  { --left: 54%; --size: 25px; --scale: 1.9; --dur: 12s; --delay: -3s; }
-.snow-icon:nth-child(8)  { --left: 63%; --size: 13px; --scale: 1.2; --dur: 14s; --delay: -7s; }
-.snow-icon:nth-child(9)  { --left: 72%; --size: 14px; --scale: 1.7; --dur: 11s; --delay: -5s; }
-.snow-icon:nth-child(10) { --left: 81%; --size: 22px; --scale: 1;   --dur: 15s; --delay: -9s; }
-.snow-icon:nth-child(11) { --left: 89%; --size: 16px; --scale: 1.5; --dur: 13s; --delay: -11s; }
-.snow-icon:nth-child(12) { --left: 96%; --size: 23px; --scale: 2;   --dur: 16s; --delay: -12s; }
-.snow-icon:nth-child(13) { --left: 64%; --size: 20px; --scale: 2;   --dur: 14s; --delay: -8s; }
+.snow-icon:nth-child(1)  { --left: 8%;  --size: 24px; --scale: 0.9; --dur: 12s; --delay: -1s; }
+.snow-icon:nth-child(2)  { --left: 18%; --size: 26px; --scale: 1.4; --dur: 14s; --delay: -4s; }
+.snow-icon:nth-child(3)  { --left: 30%; --size: 25px; --scale: 1.1; --dur: 11s; --delay: -2s; }
+.snow-icon:nth-child(4)  { --left: 45%; --size: 20px; --scale: 1.8; --dur: 15s; --delay: -8s; }
+.snow-icon:nth-child(5)  { --left: 62%; --size: 22px; --scale: 1.3; --dur: 13s; --delay: -6s; }
+.snow-icon:nth-child(6)  { --left: 80%; --size: 23px; --scale: 1.6; --dur: 16s; --delay: -10s; }
 
 .hero h1,
 .hero-text,
@@ -295,10 +288,6 @@ body.home-page {
 .svg-container .hobby-svg:nth-child(4)  { transform: translateY(4px)  rotate(-4deg); }
 .svg-container .hobby-svg:nth-child(5)  { transform: translateY(6px)  rotate(-2deg); }
 .svg-container .hobby-svg:nth-child(6)  { transform: translateY(10px) rotate(1deg); }
-.svg-container .hobby-svg:nth-child(7)  { transform: translateY(4px)  rotate(3deg); }
-.svg-container .hobby-svg:nth-child(8)  { transform: translateY(12px) rotate(4deg); }
-.svg-container .hobby-svg:nth-child(9)  { transform: translateY(16px) rotate(-3deg); }
-.svg-container .hobby-svg:nth-child(10) { transform: translateY(5px) translateX(20px)  rotate(2deg); }
 
 
 /* Hover transforms preserve the playful arrangement while lifting each icon. */
@@ -308,10 +297,6 @@ body.home-page {
 .svg-container .hobby-svg:nth-child(4):hover  { transform: translateY(0)    rotate(3deg)  scale(1.1); }
 .svg-container .hobby-svg:nth-child(5):hover  { transform: translateY(6px)  rotate(-2deg) scale(1.1); }
 .svg-container .hobby-svg:nth-child(6):hover  { transform: translateY(10px) rotate(1deg)  scale(1.1); }
-.svg-container .hobby-svg:nth-child(7):hover  { transform: translateY(4px)  rotate(-5deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(8):hover  { transform: translateY(12px) rotate(-14deg)  scale(1.1); }
-.svg-container .hobby-svg:nth-child(9):hover  { transform: translateY(16px) rotate(-3deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(10):hover { transform: translateY(5px) translateX(20px)  rotate(2deg)  scale(1.1); }
 
 .hobby-svg {
     position: relative;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBBYCLUB - [HOBBY NAME] (Skill Path variant)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sub-template.css">
+    <link rel="stylesheet" href="template-skillpath.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="husky-logo"><img src="images/siberian-husky.svg" alt="Husky"></span>
+                HOBBYCLUB
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+            <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="template.html">KNITTING</a></li>
+                <li><a href="template.html">MODELS</a></li>
+                <li><a href="template.html">CINEMA</a></li>
+                <li><a href="template.html" class="active">GAMING</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="sub-hero">
+        <div class="sub-hero-content">
+            <h1>[HOBBY NAME]</h1>
+            <p class="sub-hero-tagline">Your gateway to [key benefit or description]</p>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="sub-intro">
+        <div class="sub-container">
+            <div class="sub-intro-grid">
+                <div class="sub-intro-text">
+                    <h2>What is [HOBBY]?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="sub-intro-image">
+                    <div class="image-carousel">
+                        <div class="carousel-track">
+                            <!-- Replace background-color with background-image: url('...') on each slide -->
+                            <div class="carousel-slide carousel-slide-1"><span>IMAGE 1</span></div>
+                            <div class="carousel-slide carousel-slide-2"><span>IMAGE 2</span></div>
+                            <div class="carousel-slide carousel-slide-3"><span>IMAGE 3</span></div>
+                            <!-- Duplicates for seamless loop -->
+                            <div class="carousel-slide carousel-slide-1" aria-hidden="true"><span>IMAGE 1</span></div>
+                            <div class="carousel-slide carousel-slide-2" aria-hidden="true"><span>IMAGE 2</span></div>
+                            <div class="carousel-slide carousel-slide-3" aria-hidden="true"><span>IMAGE 3</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="sub-resources">
+        <div class="sub-container">
+            <h2>Resources & Guides</h2>
+            <div class="resource-link-layout">
+                <div class="resource-links resource-links-left">
+                    <a href="404.html" class="resource-link-item">[Link Label 1]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 2]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 3]</a>
+                </div>
+                <div class="resource-circle-wrapper">
+                    <!-- Change circle-green to match the hobby: circle-green / circle-cyan / circle-orange / circle-purple -->
+                    <div class="circle circle-green resource-circle">
+                        <img src="images/yarn-2.svg" alt="[HOBBY]" class="hobby-svg svg-small svg-front">
+                    </div>
+                </div>
+                <div class="resource-links resource-links-right">
+                    <a href="404.html" class="resource-link-item">[Link Label 4]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 5]</a>
+                    <a href="404.html" class="resource-link-item">[Link Label 6]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Pathway Section -->
+    <section class="sub-comparison skill-path-section">
+        <div class="sub-container">
+            <h2>Your Journey</h2>
+            <p class="sub-comparison-intro">Pick your starting point and level up at your own pace</p>
+            <div class="skill-path-grid">
+
+                <div class="skill-card skill-card-green">
+                    <span class="skill-badge skill-badge-green">BEGINNER</span>
+                    <ul class="skill-list">
+                        <li>[Entry point or basic version]</li>
+                        <li>[What you need to get started]</li>
+                        <li>[What you'll be able to do first]</li>
+                    </ul>
+                    <div class="skill-meta">
+                        <span>Cost: €</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Time: Low</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Difficulty: Easy</span>
+                    </div>
+                </div>
+
+                <div class="skill-connector" aria-hidden="true"></div>
+
+                <div class="skill-card skill-card-orange">
+                    <span class="skill-badge skill-badge-orange">ENTHUSIAST</span>
+                    <ul class="skill-list">
+                        <li>[Intermediate step or upgrade]</li>
+                        <li>[Expanded tools or knowledge]</li>
+                        <li>[What you can tackle at this stage]</li>
+                    </ul>
+                    <div class="skill-meta">
+                        <span>Cost: €€</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Time: Medium</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Difficulty: Moderate</span>
+                    </div>
+                </div>
+
+                <div class="skill-connector" aria-hidden="true"></div>
+
+                <div class="skill-card skill-card-purple">
+                    <span class="skill-badge skill-badge-purple">EXPERT</span>
+                    <ul class="skill-list">
+                        <li>[Advanced setup or specialisation]</li>
+                        <li>[Full capability or gear]</li>
+                        <li>[The ceiling of this hobby]</li>
+                    </ul>
+                    <div class="skill-meta">
+                        <span>Cost: €€€</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Time: High</span>
+                        <span class="skill-meta-sep">|</span>
+                        <span>Difficulty: Advanced</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>HOBBYCLUB</h4>
+            </div>
+            <div class="footer-links">
+                <a href="404.html">Privacy Policy</a>
+                <a href="404.html">Terms of Service</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 HOBBYCLUB
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

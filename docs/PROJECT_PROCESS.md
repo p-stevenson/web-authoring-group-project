@@ -142,7 +142,6 @@ The motorcycling page currently goes further than the other three by overriding 
 ├── motorcycling.html       # Motorcycling sub-page
 ├── travel.html             # Travel sub-page
 ├── 404.html                # Custom 404 page
-├── template.html           # Sub-page template (working reference)
 ├── style.css               # Main / home stylesheet
 ├── sub-template.css        # Shared sub-page layout & design tokens
 ├── gardening.css           # Gardening page palette & hero overrides
@@ -166,12 +165,15 @@ The motorcycling page currently goes further than the other three by overriding 
 │   ├── PROJECT_PROCESS.md
 │   ├── Website Technical Requirements Outline.txt
 │   └── website-plan.md
-├── layout-options/         # Archived layout explorations
+├── archived-templates/     # Archived template references and layout explorations
+│   ├── template.html
 │   ├── template-skillpath.html
 │   └── template-skillpath.css
 └── reference/              # Design reference images
     └── *.png / *.jpg
 ```
+
+The original template examples are now stored in `archived-templates/`, while the live site pages use the shared sub-template system and a cleaner semantic page structure.
 
 ---
 
@@ -246,7 +248,7 @@ The motorcycling page currently goes further than the other three by overriding 
 | `b4e3f2b` | Timeline CSS merged into sub-template |
 | `bb6d517` | Resources section redesigned with wave overlap |
 | `a0ac645` | Major sub-template CSS overhaul |
-| `115bed5` | Layout explorations archived to `layout-options/` |
+| `115bed5` | Layout explorations archived to `archived-templates/` |
 | `30be5b0` | Sub-template CSS cleaned up |
 | `9aef1f1` | Carousel placeholder images added |
 | `2ef0c73` | CSS comments added, resource spacing refined |

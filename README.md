@@ -8,6 +8,9 @@ Static five-page hobby website built for a web authoring assignment using HTML5 
 - The homepage now uses a homepage-only full-height layout so the footer sits at the bottom on taller screens without affecting sub-pages.
 - All four hobby sub-pages share the same template structure and include a video section.
 - `motorcycling.html` is the most complete page and should be used as the reference example for the other three pages.
+- The original template references have been archived to `archived-templates/` and are no longer part of the live site structure.
+- Hobby pages now use a semantic `<main>` wrapper for page content.
+- The homepage hero animation DOM has been simplified to reduce repeated decorative markup.
 - Gardening, Hiking, and Travel still need final copy, real resource links, real images, and final video choices.
 
 ## Main Files
@@ -45,12 +48,12 @@ These comment markers already show the safe sections to replace on each hobby pa
 3. Replace the current heading or paragraph text inside that section.
 4. Preview the page and check spacing, line length, and mobile layout.
 
-If you want a finished example to copy from, use `motorcycling.html` first.
+If you want a finished example to copy from, use `motorcycling.html` first. The original template reference has been archived in `archived-templates/template.html`.
 
 ## How To Create And Link A New Page
 
-1. Duplicate `template.html` or copy the structure from `motorcycling.html`.
-2. Rename the file and update the `<title>`, body class, hero text, and linked page-specific CSS file.
+1. Copy the structure from `motorcycling.html` or use `archived-templates/template.html` as a reference.
+2. Rename the new file and update the `<title>`, body class, hero text, and linked page-specific CSS file.
 3. Add a matching card or link from `index.html`.
 4. Add the new page to the navigation list on every live page if you want full site navigation to remain consistent.
 5. Preview the new page from the homepage and from the nav menu.
