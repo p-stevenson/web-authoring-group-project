@@ -447,10 +447,22 @@
         grid-template-columns: 1fr;
     }
 
+    .sub-resources {
+        padding: clamp(6.5rem, 22vw, 8rem) 14px calc(clamp(4.5rem, 16vw, 6rem) + var(--resources-wave-cap-height));
+        margin-top: -120px;
+    }
+
+    .sub-resources h2 {
+        font-size: clamp(1.55rem, 6.5vw, var(--subpage-resources-heading-font-size));
+        margin-bottom: 18px;
+    }
+
     .resource-links-layout {
         grid-template-columns: 1fr;
         justify-items: center;
-        gap: 30px;
+        gap: 0px;
+        width: min(100%, 26rem);
+        margin: 0 auto;
     }
 
     .resource-links-left,
@@ -459,13 +471,32 @@
     }
 
     .resource-links {
-        width: 60%;
+        width: min(100%, 17rem);
     }
 
     .resource-links-left > hr,
     .resource-links-right > hr {
         width: 100%;
         align-self: center;
+    }
+
+    .resource-link-item {
+        font-size: clamp(0.92rem, 3.8vw, var(--subpage-resource-link-font-size));
+        line-height: 1.3;
+        margin-bottom: 0;
+    }
+
+    .resource-links hr {
+        margin: 8px 0;
+    }
+
+    .resource-links hr + .resource-link-item {
+        margin-top: 12px;
+    }
+
+    .resource-circle {
+        width: clamp(5.75rem, 23vw, 6.75rem);
+        height: clamp(5.75rem, 23vw, 6.75rem);
     }
 
     .timeline::before {

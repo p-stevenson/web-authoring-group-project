@@ -36,3 +36,12 @@ body.hobby-hiking {
     --subpage-timeline-body-font-size: 0.9rem;
     --subpage-timeline-body-text-color: #586d73;
 }
+
+#hiking-page-content .sub-intro-text {
+    border-left: 4px solid rgba(47, 79, 87, 0.18);
+    padding-left: 18px;
+}
+
+#hiking-resources {
+    scroll-margin-top: 96px;
+}

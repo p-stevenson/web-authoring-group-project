@@ -39,6 +39,15 @@ body.hobby-travel {
     --subpage-timeline-body-text-color: #5c7a8f;
 }
 
+#travel-page-content .sub-intro-text {
+    border-left: 4px solid rgba(31, 77, 105, 0.18);
+    padding-left: 18px;
+}
+
+#travel-resources {
+    scroll-margin-top: 96px;
+}
+
 body.hobby-travel .resource-circle {
     background-color: #d8f1fb;
 }

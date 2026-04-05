@@ -37,3 +37,12 @@ body.hobby-gardening {
     --subpage-timeline-body-font-size: 0.9rem;
     --subpage-timeline-body-text-color: #5f6f53;
 }
+
+#gardening-page-content .sub-intro-text {
+    border-left: 4px solid rgba(61, 90, 43, 0.18);
+    padding-left: 18px;
+}
+
+#gardening-resources {
+    scroll-margin-top: 96px;
+}

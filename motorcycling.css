@@ -39,6 +39,15 @@ body.hobby-motorcycling {
     --subpage-timeline-body-text-color: #64607e;
 }
 
+#motorcycling-page-content .sub-intro-text {
+    border-left: 4px solid rgba(64, 55, 102, 0.18);
+    padding-left: 18px;
+}
+
+#motorcycling-resources {
+    scroll-margin-top: 96px;
+}
+
 body.hobby-motorcycling .carousel-slide {
     color: #ffffff;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
