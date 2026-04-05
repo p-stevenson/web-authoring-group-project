@@ -2,38 +2,38 @@
 /* Edit these variables to customize this page only. */
 body.hobby-gardening {
 
-    --sub-heading-font: 'Slackey', 'Arial', sans-serif;
-    --sub-body-font: 'Arial', sans-serif;
+    --subpage-heading-font-family: 'Slackey', 'Arial', sans-serif;
+    --subpage-body-font-family: 'Arial', sans-serif;
 
-    --sub-hero-bg: #c6e6b4;
-    --sub-hero-bg-image: url('images/gardening-sub-hero-wave.svg');
-    --sub-hero-text: #ffffff;
-    --sub-hero-title-size: clamp(2.4rem, 7.5vw, 4.2rem);
-    --sub-hero-tagline-size: clamp(1rem, 2.6vw, 1.3rem);
+    --subpage-hero-background-color: #c6e6b4;
+    --subpage-hero-wave-image: url('images/gardening-sub-hero-wave.svg');
+    --subpage-hero-text-color: #ffffff;
+    --subpage-hero-title-font-size: clamp(2.4rem, 7.5vw, 4.2rem);
+    --subpage-hero-tagline-font-size: clamp(1rem, 2.6vw, 1.3rem);
 
-    --sub-intro-bg: #c6e6b4;
-    --sub-intro-heading-size: 1.8rem;
-    --sub-intro-heading-color: #3d5a2b;
-    --sub-intro-text-size: 1rem;
-    --sub-intro-text-color: #2f3a28;
+    --subpage-intro-background-color: #c6e6b4;
+    --subpage-intro-heading-font-size: 1.8rem;
+    --subpage-intro-heading-color: #3d5a2b;
+    --subpage-intro-body-font-size: 1rem;
+    --subpage-intro-body-text-color: #2f3a28;
 
-    --sub-carousel-label-size: 0.85rem;
+    --subpage-carousel-label-font-size: 0.85rem;
 
-    --sub-resources-heading-size: 2rem;
-    --sub-resource-link-size: 1rem;
-    --sub-resource-link-color: #ffffff;
-    --sub-resource-link-hover: #f78d65;
+    --subpage-resources-heading-font-size: 2rem;
+    --subpage-resource-link-font-size: 1rem;
+    --subpage-resource-link-color: #ffffff;
+    --subpage-resource-link-hover-color: #f78d65;
 
-    --sub-section-bg: #ffffff;
-    --sub-section-heading-size: 2rem;
-    --sub-section-heading-color: #3d5a2b;
-    --sub-section-intro-color: #5f6f53;
+    --subpage-content-background-color: #ffffff;
+    --subpage-section-heading-font-size: 2rem;
+    --subpage-section-heading-color: #3d5a2b;
+    --subpage-section-supporting-text-color: #5f6f53;
 
-    --sub-timeline-dot-1: #8cc63f;
-    --sub-timeline-dot-2: #f78d65;
-    --sub-timeline-dot-3: #7b68ee;
-    --sub-timeline-title-size: 0.95rem;
-    --sub-timeline-title-color: #3d5a2b;
-    --sub-timeline-text-size: 0.9rem;
-    --sub-timeline-text-color: #5f6f53;
+    --subpage-timeline-step-one-color: #8cc63f;
+    --subpage-timeline-step-two-color: #f78d65;
+    --subpage-timeline-step-three-color: #7b68ee;
+    --subpage-timeline-heading-font-size: 0.95rem;
+    --subpage-timeline-heading-color: #3d5a2b;
+    --subpage-timeline-body-font-size: 0.9rem;
+    --subpage-timeline-body-text-color: #5f6f53;
 }

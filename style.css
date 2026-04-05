@@ -7,24 +7,24 @@
 
 /* === DESIGN TOKENS (CSS CUSTOM PROPERTIES) === */
 :root {
-    --color-white: #fff;        /* White surfaces and text on dark backgrounds. */
-    --color-black: #1a1a1a;     /* Footer background and darkest contrast. */
-    --color-text: #333;         /* Default body text. */
-    --color-text-muted: #666;   /* Secondary/supporting text. */
-    --color-brown: #5c4a44;     /* Brand text color (logo/nav headings). */
-    --color-accent: #f78d65;    /* Primary accent orange. */
-    --color-accent2: #FCD4BB;   /* Light peach section background. */
-    --color-accent-dark: #e67e55; /* Darker orange for depth and hover. */
-    --color-gold: #deb841;      /* Logo circle background. */
-    --color-purple: #4a3b78;    /* Call-to-action button color. */
-    --color-purple-dark: #3d3066; /* Call-to-action hover state. */
-    --color-gray-light: #f0f0f0; /* Subtle borders and light hover. */
-    --color-gray-mid: #888;     /* Muted footer links and text. */
-    --color-gray-dark: #333;    /* Footer divider lines. */
-    --color-green: #8cc63f;     /* Hobby circle modifier. */
-    --color-cyan: #4dcad2;      /* Hobby circle modifier. */
-    --color-violet: #7b68ee;    /* Hobby circle modifier. */
-    --color-shelf: #8b5a3c;     /* Hero shelf platform. */
+    --site-surface-color: #fff;                    /* Shared light background surface. */
+    --footer-background-color: #1a1a1a;           /* Footer background and darkest contrast. */
+    --site-body-text-color: #333;                 /* Default body text color. */
+    --site-secondary-text-color: #666;            /* Secondary and supporting text color. */
+    --site-brand-text-color: #5c4a44;             /* Logo and navigation text color. */
+    --site-accent-color: #f78d65;                 /* Shared accent used for highlights and emphasis. */
+    --subpage-default-background-color: #fcd4bb;  /* Default peach background for shared sub-page sections. */
+    --hero-illustration-background-color: #e67e55;/* Darker orange behind the homepage shelf art. */
+    --logo-badge-background-color: #deb841;       /* Circular husky badge background. */
+    --primary-button-background-color: #4a3b78;   /* Main call-to-action button background. */
+    --primary-button-hover-background-color: #3d3066; /* Main call-to-action button hover state. */
+    --site-border-light-color: #f0f0f0;           /* Light border and subtle divider color. */
+    --footer-link-text-color: #888;               /* Footer links and muted footer text. */
+    --footer-divider-color: #333;                 /* Footer divider line color. */
+    --gardening-icon-background-color: #8cc63f;   /* Gardening icon circle and timeline accent. */
+    --hiking-icon-background-color: #4dcad2;      /* Hiking icon circle and timeline accent. */
+    --motorcycling-icon-background-color: #7b68ee;/* Motorcycling icon circle and timeline accent. */
+    --hero-shelf-board-color: #8b5a3c;            /* Wood-toned shelf board color. */
 }
 
 /* === FONT === */
@@ -40,7 +40,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--color-text);
+    color: var(--site-body-text-color);
 }
 
 body.home-page {
@@ -55,9 +55,9 @@ body.home-page {
 
 /* === NAVIGATION === */
 .main-nav {
-    background-color: var(--color-white);
+    background-color: var(--site-surface-color);
     padding: 15px 0;
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--site-accent-color);
     box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.274);
     position: sticky; /* Keeps nav fixed at the top during scroll. */
     top: 0;
@@ -74,18 +74,19 @@ body.home-page {
     gap: 40px;
 }
 
-.logo {
+.site-logo {
     font-family: 'Slackey', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: var(--color-brown);
+    color: var(--site-brand-text-color);
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
 }
 
 .husky-logo {
-    background: var(--color-gold);
+    background: var(--logo-badge-background-color);
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -120,13 +121,13 @@ body.home-page {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--color-brown);
+    background-color: var(--site-brand-text-color);
     border-radius: 3px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--color-brown);
+    color: var(--site-brand-text-color);
     font-weight: bold;
     font-size: clamp(0.85rem, 2vw, 1.2rem);
     font-family: 'Slackey', 'Arial', sans-serif;
@@ -135,20 +136,20 @@ body.home-page {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--color-accent);
+    color: var(--site-accent-color);
 }
 
 /* === HERO === */
 .hero {
-    background-color: var(--color-accent);
-    color: var(--color-white);
+    background-color: var(--site-accent-color);
+    color: var(--site-surface-color);
     text-align: center;
     padding: 50px 20px 0 20px;
     position: relative;
     overflow: hidden; /* Clips falling icons to hero bounds. */
 }
 
-.hero-snow {
+.hero-decorative-icons {
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -223,26 +224,26 @@ body.home-page {
 }
 
 .btn-white {
-    background-color: var(--color-white);
-    color: var(--color-text);
+    background-color: var(--site-surface-color);
+    color: var(--site-body-text-color);
 }
 
 .btn-white:hover {
-    background-color: var(--color-gray-light);
+    background-color: var(--site-border-light-color);
 }
 
 .btn-purple {
-    background-color: var(--color-purple);
-    color: var(--color-white);
+    background-color: var(--primary-button-background-color);
+    color: var(--site-surface-color);
 }
 
 .btn-purple:hover {
-    background-color: var(--color-purple-dark);
+    background-color: var(--primary-button-hover-background-color);
 }
 
 /* === HERO ILLUSTRATION === */
 .hero-illustration {
-    background-color: var(--color-accent-dark);
+    background-color: var(--hero-illustration-background-color);
     height: 200px;
     margin-top: 30px;
     border-radius: 20px 20px 0 0;
@@ -253,13 +254,13 @@ body.home-page {
     position: relative;
 }
 
-.illustration-shelf {
+.hero-shelf-base {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     gap: 0;
     padding: 20px;
-    background: var(--color-shelf);
+    background: var(--hero-shelf-board-color);
     border-radius: 8px 8px 0 0;
     width: 85%;
     max-width: 750px;
@@ -268,7 +269,7 @@ body.home-page {
     overflow: hidden;
 }
 
-.svg-container {
+.hero-shelf-icons {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -283,30 +284,30 @@ body.home-page {
 }
 
 /* Per-item transforms create a natural, hand-placed shelf arrangement. */
-.svg-container .hobby-svg:nth-child(1)  { transform: translateY(15px) translateX(-10px)    rotate(0deg); } 
-.svg-container .hobby-svg:nth-child(2)  { transform: translateY(14px) rotate(-6deg); }
-.svg-container .hobby-svg:nth-child(3)  { transform: translateY(25px)  rotate(2deg); }
-.svg-container .hobby-svg:nth-child(4)  { transform: translateY(4px)  rotate(-4deg); }
-.svg-container .hobby-svg:nth-child(5)  { transform: translateY(6px)  rotate(-2deg); }
-.svg-container .hobby-svg:nth-child(6)  { transform: translateY(2px)  rotate(10deg); }
-.svg-container .hobby-svg:nth-child(7)  { transform: translateY(10px) rotate(1deg); }
+.hero-shelf-icons .hobby-svg:nth-child(1)  { transform: translateY(15px) translateX(-10px)    rotate(0deg); } 
+.hero-shelf-icons .hobby-svg:nth-child(2)  { transform: translateY(14px) rotate(-6deg); }
+.hero-shelf-icons .hobby-svg:nth-child(3)  { transform: translateY(25px)  rotate(2deg); }
+.hero-shelf-icons .hobby-svg:nth-child(4)  { transform: translateY(4px)  rotate(-4deg); }
+.hero-shelf-icons .hobby-svg:nth-child(5)  { transform: translateY(6px)  rotate(-2deg); }
+.hero-shelf-icons .hobby-svg:nth-child(6)  { transform: translateY(2px)  rotate(10deg); }
+.hero-shelf-icons .hobby-svg:nth-child(7)  { transform: translateY(10px) rotate(1deg); }
 
-.svg-container .travel-plane {
+.hero-shelf-icons .travel-plane {
     order: 1;
     transform: translateY(2px) translateX(10px) rotate(-90deg);
 }
 
 
 /* Hover transforms preserve the playful arrangement while lifting each icon. */
-.svg-container .hobby-svg:nth-child(1):hover  { transform: translateY(8px)  rotate(-4deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(2):hover  { transform: translateY(2px)  rotate(2deg)  scale(1.1); }
-.svg-container .hobby-svg:nth-child(3):hover  { transform: translateY(14px) rotate(-6deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(4):hover  { transform: translateY(0)    rotate(3deg)  scale(1.1); }
-.svg-container .hobby-svg:nth-child(5):hover  { transform: translateY(6px)  rotate(-2deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(6):hover  { transform: translateY(-4px) rotate(14deg) scale(1.1); }
-.svg-container .hobby-svg:nth-child(7):hover  { transform: translateY(10px) rotate(1deg)  scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(1):hover  { transform: translateY(8px)  rotate(-4deg) scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(2):hover  { transform: translateY(2px)  rotate(2deg)  scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(3):hover  { transform: translateY(14px) rotate(-6deg) scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(4):hover  { transform: translateY(0)    rotate(3deg)  scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(5):hover  { transform: translateY(6px)  rotate(-2deg) scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(6):hover  { transform: translateY(-4px) rotate(14deg) scale(1.1); }
+.hero-shelf-icons .hobby-svg:nth-child(7):hover  { transform: translateY(10px) rotate(1deg)  scale(1.1); }
 
-.svg-container .travel-plane:hover {
+.hero-shelf-icons .travel-plane:hover {
     transform: translateY(-4px) translateX(10px) rotate(-90deg) scale(1.1);
 }
 
@@ -364,8 +365,8 @@ body.home-page {
 
 /* === SECONDARY BAR === */
 .secondary-bar {
-    background-color: var(--color-brown);
-    color: var(--color-white);
+    background-color: var(--site-brand-text-color);
+    color: var(--site-surface-color);
     padding: 25px 20px;
     display: flex;
     justify-content: center;
@@ -382,7 +383,7 @@ body.home-page {
 /* === HOBBY GRID === */
 .hobby-selection {
     padding: 60px 20px;
-    background-color: var(--color-white);
+    background-color: var(--site-surface-color);
 }
 
 body.home-page .hobby-selection {
@@ -406,7 +407,7 @@ body.home-page .hobby-container {
 
 .hobby-item {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--site-body-text-color);
     width: 200px;
     text-align: center;
     transition: transform 0.3s;
@@ -416,7 +417,7 @@ body.home-page .hobby-container {
     transform: translateY(-5px);
 }
 
-.circle {
+.hobby-icon-badge {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -427,10 +428,10 @@ body.home-page .hobby-container {
     font-size: 3rem;
 }
 
-.circle-green { background-color: var(--color-green); }
-.circle-cyan { background-color: var(--color-cyan); }
-.circle-orange { background-color: var(--color-accent); }
-.circle-purple { background-color: var(--color-violet); }
+.hobby-icon-badge-gardening { background-color: var(--gardening-icon-background-color); }
+.hobby-icon-badge-hiking { background-color: var(--hiking-icon-background-color); }
+.hobby-icon-badge-travel { background-color: var(--site-accent-color); }
+.hobby-icon-badge-motorcycling { background-color: var(--motorcycling-icon-background-color); }
 
 .hobby-item h3 {
     font-family: 'Slackey', 'Arial', sans-serif;
@@ -442,16 +443,16 @@ body.home-page .hobby-container {
 
 .hobby-item p {
     font-size: 0.85rem;
-    color: var(--color-text-muted);
+    color: var(--site-secondary-text-color);
     line-height: 1.5;
 }
 
 /* === FOOTER === */
 .main-footer {
-    background-color: var(--color-black);
-    color: var(--color-gray-mid);
+    background-color: var(--footer-background-color);
+    color: var(--footer-link-text-color);
     padding: 10px 20px;
-    border-top: 1px solid var(--color-gray-dark);
+    border-top: 1px solid var(--footer-divider-color);
 }
 
 .footer-container {
@@ -464,25 +465,25 @@ body.home-page .hobby-container {
 }
 
 .footer-info h4 {
-    color: var(--color-white);
+    color: var(--site-surface-color);
     font-size: 1.1rem;
 }
 
 .footer-links a {
-    color: var(--color-gray-mid);
+    color: var(--footer-link-text-color);
     text-decoration: none;
     margin-right: 20px;
     font-size: 0.85rem;
 }
 
 .footer-links a:hover {
-    color: var(--color-accent);
+    color: var(--site-accent-color);
 }
 
 .footer-copy {
     font-size: 0.75rem;
     width: 100%;
-    border-top: 1px solid var(--color-gray-dark);
+    border-top: 1px solid var(--footer-divider-color);
     padding-top: 10px;
     text-align: center;
 }
@@ -496,7 +497,7 @@ body.home-page .hobby-container {
         gap: 12px;
     }
 
-    .logo {
+    .site-logo {
         justify-self: start;
     }
 
@@ -534,7 +535,7 @@ body.home-page .hobby-container {
         margin-right: calc(50% - 50vw);
     }
     
-    .illustration-shelf {
+    .hero-shelf-base {
         width: 100%;
         max-width: none;
     }

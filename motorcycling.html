@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="motorcycling.css">
 </head>
 <body class="hobby-page hobby-motorcycling">
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Primary">
         <div class="nav-container">
-            <div class="logo">
-                <span class="husky-logo"><img src="images/siberian-husky.svg" alt="Husky"></span>
+            <a href="index.html" class="site-logo">
+                <span class="husky-logo" aria-hidden="true"><img src="images/siberian-husky.svg" alt=""></span>
                 HOBBYCLUB
-            </div>
+            </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
                 <span></span>
@@ -70,7 +70,7 @@
     <section class="sub-resources">
         <div class="sub-container">
             <h2>Resources & Guides</h2>
-            <div class="resource-link-layout">
+            <div class="resource-links-layout">
                 <div class="resource-links resource-links-left">
                     <a href="https://www.rsa.ie/road-safety/road-users/motorcyclists/safe-motorcycling" class="resource-link-item" target="_blank" rel="noopener noreferrer">RSA Safe Motorcycling</a>
                     <hr>
@@ -79,8 +79,8 @@
                     <a href="https://www.gov.uk/ride-motorcycle-moped" class="resource-link-item" target="_blank" rel="noopener noreferrer">GOV.UK Licence Guide</a>
                     <hr>
                 </div>
-                <div class="resource-circle-wrapper">
-                    <div class="circle circle-purple resource-circle">
+                <div class="resource-icon-badge-wrapper">
+                    <div class="hobby-icon-badge hobby-icon-badge-motorcycling resource-circle" aria-hidden="true">
                         <img src="images/motorcycle-svgrepo-com.svg" alt="Motorcycling" class="hobby-svg svg-small svg-front">
                     </div>
                 </div>

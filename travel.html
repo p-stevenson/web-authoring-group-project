@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="travel.css">
 </head>
 <body class="hobby-page hobby-travel">
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Primary">
         <div class="nav-container">
-            <div class="logo">
-                <span class="husky-logo"><img src="images/siberian-husky.svg" alt="Husky"></span>
+            <a href="index.html" class="site-logo">
+                <span class="husky-logo" aria-hidden="true"><img src="images/siberian-husky.svg" alt=""></span>
                 HOBBYCLUB
-            </div>
+            </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
                 <span></span>
@@ -70,7 +70,7 @@
     <section class="sub-resources">
         <div class="sub-container">
             <h2>Resources & Guides</h2>
-            <div class="resource-link-layout">
+            <div class="resource-links-layout">
                 <div class="resource-links resource-links-left">
                     <a href="https://www.ireland.ie/en/dfa/overseas-travel/advice/" class="resource-link-item" target="_blank" rel="noopener noreferrer">Ireland.ie Travel Advice</a>
                     <hr>
@@ -79,8 +79,8 @@
                     <a href="https://www.iatatravelcentre.com/" class="resource-link-item" target="_blank" rel="noopener noreferrer">IATA Travel Centre</a>
                     <hr>
                 </div>
-                <div class="resource-circle-wrapper">
-                    <div class="circle circle-orange resource-circle">
+                <div class="resource-icon-badge-wrapper">
+                    <div class="hobby-icon-badge hobby-icon-badge-travel resource-circle" aria-hidden="true">
                         <img src="images/airplane-svgrepo-com.svg" alt="Airplane" class="hobby-svg svg-small svg-front">
                     </div>
                 </div>

@@ -8,12 +8,12 @@
 </head>
 <body class="home-page">
 
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Primary">
         <div class="nav-container">
-            <div class="logo">
-                <span class="husky-logo"><img src="images/siberian-husky.svg" alt="Husky"></span>
+            <a href="index.html" class="site-logo">
+                <span class="husky-logo" aria-hidden="true"><img src="images/siberian-husky.svg" alt=""></span>
                 HOBBYCLUB
-            </div>
+            </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
             <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
                 <span></span>
@@ -31,7 +31,7 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-snow" aria-hidden="true">
+        <div class="hero-decorative-icons" aria-hidden="true">
             <img src="images/yarn-2.svg" alt="" class="snow-icon">
             <img src="images/rocket.svg" alt="" class="snow-icon">
             <img src="images/airplane-svgrepo-com.svg" alt="" class="snow-icon">
@@ -46,10 +46,10 @@
             <a href="#hobbies" class="btn btn-purple">READ MORE</a>
         </div>
         
-        <div class="hero-illustration">
-            <div class="illustration-shelf">
+        <div class="hero-illustration" aria-hidden="true">
+            <div class="hero-shelf-base">
             </div>
-            <div class="svg-container">
+            <div class="hero-shelf-icons">
                 <img src="images/projector.svg" alt="Projector" class="hobby-svg svg-medium svg-mid">
                 <img src="images/backpack.svg" alt="Backpack" class="hobby-svg svg-xlarge svg-back">
                 <img src="images/yarn-2.svg" alt="Yarn 2" class="hobby-svg svg-small svg-front">
@@ -68,7 +68,7 @@
     <main class="hobby-selection" id="hobbies">
         <div class="hobby-container">
             <a href="gardening.html" class="hobby-item">
-                <div class="circle circle-green">                
+                <div class="hobby-icon-badge hobby-icon-badge-gardening" aria-hidden="true">                
                     <img src="images/camping.svg" alt="Gardening" class="hobby-svg svg-small svg-front">
                 </div>
                 <h3>GARDENING</h3>
@@ -76,7 +76,7 @@
             </a>
 
             <a href="hiking.html" class="hobby-item">
-                <div class="circle circle-cyan">                
+                <div class="hobby-icon-badge hobby-icon-badge-hiking" aria-hidden="true">                
                     <img src="images/backpack.svg" alt="Hiking" class="hobby-svg svg-small svg-front">
                 </div>
                 <h3>HIKING</h3>
@@ -84,7 +84,7 @@
             </a>
 
             <a href="travel.html" class="hobby-item">
-                <div class="circle circle-orange">                
+                <div class="hobby-icon-badge hobby-icon-badge-travel" aria-hidden="true">                
                     <img src="images/airplane-svgrepo-com.svg" alt="Airplane" class="hobby-svg svg-small svg-mid">
                 </div>
                 <h3>TRAVEL</h3>
@@ -92,7 +92,7 @@
             </a>
 
             <a href="motorcycling.html" class="hobby-item">
-                <div class="circle circle-purple">                
+                <div class="hobby-icon-badge hobby-icon-badge-motorcycling" aria-hidden="true">                
                     <img src="images/motorcycle-svgrepo-com.svg" alt="Motorcycling" class="hobby-svg svg-small svg-mid">
                 </div>
                 <h3>MOTORCYCLING</h3>
