@@ -46,7 +46,7 @@
 
 - **Sticky navigation** — always accessible
 - **Card-based hobby selection** — clear visual hierarchy
-- **Hero section with illustration shelf** — visual interest without images
+- **Hero section with illustration shelf** — visual interest using lightweight SVG artwork instead of large hero photography
 - **Mobile-first responsive** — works on phones from the start
 - **Homepage-only flex layout** — keeps the homepage footer at the bottom on tall screens without affecting sub-page layout
 - **In-page jump target** — the `READ MORE` button links to `#hobbies`, which is also used as the project's clear CSS `id` selector example
@@ -87,7 +87,7 @@ All four hobby sub-pages share a single layout defined in `sub-template.css`:
 - **Hero section** — full-width with wave SVG background, large title and tagline
 - **Intro section** — two-column grid: text left, image carousel right
 - **Image carousel** — pure CSS animation (`@keyframes carousel-scroll`), 3 slides + 3 duplicates for seamless loop; `prefers-reduced-motion` respected; current shared sizing uses a responsive width-based carousel frame
-- **Resources section** — overlapping wave design using `::before`/`::after` pseudo-elements and a CSS `linear-gradient` background
+- **Resources section** — overlapping wave design using section overlap, shared SVG wave artwork, and pseudo-elements
 - **Embedded video section** — shared responsive iframe wrapper between resources and the getting-started timeline
 - **Getting Started timeline** — vertical timeline with colour-coded milestone dots
 - **Accessibility:** `prefers-reduced-motion` disables carousel animation for motion-sensitive users; video sections include descriptive headings and `iframe` titles
@@ -101,14 +101,14 @@ Each hobby page has its own CSS file that overrides shared design tokens on a sc
 | Gardening | `hobby-gardening` | Soft greens `#c6e6b4` |
 | Hiking | `hobby-hiking` | Cool blues `#b8d7de` |
 | Motorcycling | `hobby-motorcycling` | Muted purples `#e6e2f7` |
-| Travel | `hobby-travel` | Warm peach `#f4c7a7` |
+| Travel | `hobby-travel` | Light sky blues `#c7e5f5` |
 
 Key overrideable tokens per page:
 - `--sub-hero-bg` — hero background colour
 - `--sub-hero-bg-image` — hero wave SVG (each page can use a distinct wave asset)
 - `--sub-intro-bg`, heading colors, text colors, timeline dot colors, etc.
 
-The motorcycling page currently goes further than the other three by overriding typography, resource-link styling, and carousel backgrounds with final content and real images.
+Motorcycling and Travel are now the two most complete reference pages. Both use final copy, real resource links, live video embeds, and real carousel imagery. Motorcycling still goes further visually by overriding typography, resource-link styling, and carousel presentation more aggressively than the other pages.
 
 ### 3.6 Custom 404 Page
 
@@ -122,13 +122,13 @@ The motorcycling page currently goes further than the other three by overriding 
 | Challenge | Solution |
 |-----------|----------|
 | **No JavaScript allowed** | Leveraged CSS-only solutions: checkbox nav toggle, CSS animations, hover states |
-| **Limited assets** | Created custom inline SVGs (yarn, rocket, husky, etc.) — lightweight, scalable |
+| **Limited assets** | Reused lightweight SVG asset files and shared wave graphics to keep the site flexible without relying on heavy media |
 | **Responsive design** | Flexbox + CSS Grid with mobile-first approach; `clamp()` for fluid typography |
 | **Cross-page consistency** | Shared `sub-template.css` with CSS custom property tokens ensures uniform layout |
 | **Per-page theming** | Scoped body class overrides (e.g. `body.hobby-gardening`) isolate palette changes |
 | **Hero wave image per page** | `--sub-hero-bg-image` token in shared template, overridden per page CSS file |
 | **Seamless carousel loop** | Six-slide track (3 real + 3 duplicate) with carefully timed `@keyframes` percentages |
-| **Resources wave overlap** | Negative `margin-top` + `::before`/`::after` pseudo-elements create layered wave effect |
+| **Resources wave overlap** | Negative `margin-top` plus shared SVG wave backgrounds create the layered transition between sections |
 
 ---
 
@@ -148,22 +148,28 @@ The motorcycling page currently goes further than the other three by overriding 
 ├── hiking.css              # Hiking page palette & hero overrides
 ├── motorcycling.css        # Motorcycling page palette & hero overrides
 ├── travel.css              # Travel page palette & hero overrides
-├── checklist.md            # Requirement checklist and priority tracking
 ├── fonts/
 │   └── Slackey/            # Custom display font
 ├── images/
-│   ├── *.svg               # Shared icons (yarn, rocket, husky, etc.)
-│   ├── *.jpg               # Hobby photos, including the motorcycling carousel images
-│   ├── hero-wavy-svg-*.svg # Shared hero wave graphics
+│   ├── *.svg               # Shared icons and wave graphics currently used by the live site
+│   ├── *.jpg               # Hobby photos, including motorcycling and travel carousel images
+│   ├── hero-wavy-svg-*.svg # Shared wave graphics for the sub-page template
 │   ├── gardening-sub-hero-wave.svg
 │   ├── hiking-sub-hero-wave.svg
 │   ├── motorcycling-sub-hero-wave.svg
+│   ├── sub-hero-wave.svg
 │   ├── motorcycle-gear.jpg
 │   ├── motorcycling-roadcraft.jpg
-│   └── motorcycling-training.jpg
+│   ├── motorcycling-training.jpg
+│   ├── travel-1.jpg
+│   ├── travel-2.jpg
+│   └── travel-3.jpg
 ├── docs/
+│   ├── README.md
 │   ├── PROJECT_PROCESS.md
+│   ├── checklist.md
 │   ├── Website Technical Requirements Outline.txt
+│   ├── Travel.txt
 │   └── website-plan.md
 ├── archived-templates/     # Archived template references and layout explorations
 │   ├── template.html
@@ -206,23 +212,27 @@ The original template examples are now stored in `archived-templates/`, while th
 - [x] Motorcycling page updated with a live YouTube embed
 - [x] Motorcycling page filled out with final intro copy, real Irish/UK/European resource links, and complete timeline text
 - [x] Motorcycling carousel updated to use real photography and custom page-level font overrides
-- [x] README, plan, and process docs updated with maintenance guidance and current project status
+- [x] Travel page updated with final intro copy, real travel resource links, a live video embed, and real carousel photography
+- [x] Hobby sub-pages now use semantic `<main>` wrappers for primary page content
+- [x] Technical checklist updated to match the formal outline for the homepage and motorcycling page
+- [x] Unused SVG assets removed from the `images/` folder after a reference audit
+- [x] The process documentation and technical checklist have been refreshed to match the latest audited project state
 
 ### In Progress / Remaining
-- [ ] Replace carousel placeholder slides with real photographs on Gardening, Hiking, and Travel
-- [ ] Fill in sub-page content on Gardening, Hiking, and Travel (intro text, timeline entries, resource links)
-- [ ] Replace placeholder video embeds on Gardening, Hiking, and Travel with final clips
-- [ ] Consider adding `<main>` wrappers to the hobby sub-pages for stronger semantics
+- [ ] Replace carousel placeholder slides with real photographs on Gardening and Hiking
+- [ ] Fill in Gardening and Hiking content (intro text, timeline entries, resource links)
+- [ ] Replace the Gardening and Hiking placeholder video embeds with final clips
+- [ ] Confirm FTP upload and post-deployment checks on the live or local server
 - [ ] Final cross-browser / mobile testing
 
 ---
 
 ## 8. Future Improvements (If Time Permits)
 
-- [ ] Complete the remaining three hobby pages to the same standard as Motorcycling
+- [ ] Complete Gardening and Hiking to the same standard as Motorcycling and Travel
 - [ ] Implement dark mode via `prefers-color-scheme`
 - [ ] Add hover micro-interactions on hobby cards
-- [ ] Replace remaining placeholder content links with real destinations
+- [ ] Replace the remaining Gardening and Hiking placeholder content links with real destinations
 
 ---
 
@@ -258,6 +268,8 @@ The original template examples are now stored in `archived-templates/`, while th
 | `89acdfd` | Motorcycling page content, carousel imagery, and page-specific fonts refined |
 | `b9b00ab` | Motorcycling resources link font updated |
 | `3abf502` | Homepage `#hobbies` id selector and checklist updates |
+
+Recent workspace updates after the commits listed above include the travel page content pass, checklist alignment against the formal technical outline, SVG asset cleanup, and this documentation refresh.
 
 ---
 

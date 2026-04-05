@@ -7,11 +7,12 @@ Static five-page hobby website built for a web authoring assignment using HTML5 
 - The homepage is in place with sticky navigation, hero animation, hobby cards, and a `READ MORE` jump link to the hobby section.
 - The homepage now uses a homepage-only full-height layout so the footer sits at the bottom on taller screens without affecting sub-pages.
 - All four hobby sub-pages share the same template structure and include a video section.
-- `motorcycling.html` is the most complete page and should be used as the reference example for the other three pages.
+- `motorcycling.html` and `travel.html` are the most complete pages and currently act as the strongest reference examples.
 - The original template references have been archived to `archived-templates/` and are no longer part of the live site structure.
 - Hobby pages now use a semantic `<main>` wrapper for page content.
 - The homepage hero animation DOM has been simplified to reduce repeated decorative markup.
-- Gardening, Hiking, and Travel still need final copy, real resource links, real images, and final video choices.
+- Gardening and Hiking still need final copy, real resource links, real carousel images, and final video embeds.
+- The homepage and motorcycling page have been checked against the formal technical requirements outline in `docs/checklist.md`.
 
 ## Main Files
 
@@ -20,7 +21,8 @@ Static five-page hobby website built for a web authoring assignment using HTML5 
 - `style.css` - shared site styles and homepage layout
 - `sub-template.css` - shared hobby-page layout, carousel, resources, video, and timeline styles
 - `gardening.css`, `hiking.css`, `travel.css`, `motorcycling.css` - page-specific theme overrides
-- `checklist.md` - requirement tracking and remaining work
+- `docs/checklist.md` - technical requirements compliance tracking
+- `docs/README.md` - maintenance and editing guide
 - `docs/PROJECT_PROCESS.md` - design/process notes
 - `docs/website-plan.md` - project planning notes
 
@@ -39,7 +41,7 @@ These comment markers already show the safe sections to replace on each hobby pa
 - `style.css` affects the homepage and shared navigation/footer behaviour.
 - `sub-template.css` affects every hobby page.
 - `index.html` affects the homepage structure and card links.
-- `checklist.md` and the files in `docs/` affect project documentation and status tracking.
+- `docs/checklist.md` and the other files in `docs/` affect project documentation and status tracking.
 
 ## How To Update Existing Text
 
@@ -49,6 +51,8 @@ These comment markers already show the safe sections to replace on each hobby pa
 4. Preview the page and check spacing, line length, and mobile layout.
 
 If you want a finished example to copy from, use `motorcycling.html` first. The original template reference has been archived in `archived-templates/template.html`.
+
+`travel.html` is also a good live reference for a completed page using real resources, carousel imagery, and a final video embed.
 
 ## How To Create And Link A New Page
 
@@ -67,6 +71,8 @@ If you want a finished example to copy from, use `motorcycling.html` first. The 
 5. Keep image sizes reasonable before upload so the pages stay quick to load.
 
 The motorcycling carousel in `motorcycling.css` is the current example of swapping placeholder slides for real images.
+
+`travel.css` is the other live example of a page-specific carousel that already uses real photography.
 
 ## How To Replace The Embedded Video
 
