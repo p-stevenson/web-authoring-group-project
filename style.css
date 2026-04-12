@@ -1,42 +1,38 @@
-/* === RESET === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* === DESIGN TOKENS (CSS CUSTOM PROPERTIES) === */
 :root {
-    --site-surface-color: #fff;                    /* Shared light background surface. */
-    --footer-background-color: #1a1a1a;           /* Footer background and darkest contrast. */
-    --site-body-text-color: #333;                 /* Default body text color. */
-    --site-secondary-text-color: #666;            /* Secondary and supporting text color. */
-    --site-brand-text-color: #5c4a44;             /* Logo and navigation text color. */
-    --site-accent-color: #f78d65;                 /* Shared accent used for highlights and emphasis. */
-    --subpage-default-background-color: #fcd4bb;  /* Default peach background for shared sub-page sections. */
-    --hero-illustration-background-color: #e67e55;/* Darker orange behind the homepage shelf art. */
-    --logo-badge-background-color: #deb841;       /* Circular husky badge background. */
-    --primary-button-background-color: #4a3b78;   /* Main call-to-action button background. */
-    --primary-button-hover-background-color: #3d3066; /* Main call-to-action button hover state. */
-    --site-border-light-color: #f0f0f0;           /* Light border and subtle divider color. */
-    --footer-link-text-color: #888;               /* Footer links and muted footer text. */
-    --footer-divider-color: #333;                 /* Footer divider line color. */
-    --gardening-icon-background-color: #8cc63f;   /* Gardening icon circle and timeline accent. */
-    --hiking-icon-background-color: #4dcad2;      /* Hiking icon circle and timeline accent. */
-    --motorcycling-icon-background-color: #7b68ee;/* Motorcycling icon circle and timeline accent. */
-    --hero-shelf-board-color: #8b5a3c;            /* Wood-toned shelf board color. */
+    --site-surface-color: #fff;
+    --footer-background-color: #1a1a1a;
+    --site-body-text-color: #333;
+    --site-secondary-text-color: #666;
+    --site-brand-text-color: #5c4a44;
+    --site-accent-color: #f78d65;
+    --subpage-default-background-color: #fcd4bb;
+    --hero-illustration-background-color: #e67e55;
+    --logo-badge-background-color: #deb841;
+    --primary-button-background-color: #4a3b78;
+    --primary-button-hover-background-color: #3d3066;
+    --site-border-light-color: #f0f0f0;
+    --footer-link-text-color: #888;
+    --footer-divider-color: #333;
+    --gardening-icon-background-color: #8cc63f;
+    --hiking-icon-background-color: #4dcad2;
+    --motorcycling-icon-background-color: #7b68ee;
+    --hero-shelf-board-color: #8b5a3c;
 }
 
-/* === FONT === */
 @font-face {
     font-family: 'Slackey';
     src: url('fonts/Slackey/Slackey-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
-    font-display: swap; /* Shows fallback text first, then swaps to Slackey. */
+    font-display: swap;
 }
 
-/* === BASE === */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -53,15 +49,14 @@ body.home-page {
     scroll-margin-top: 110px;
 }
 
-/* === NAVIGATION === */
 .main-nav {
     background-color: var(--site-surface-color);
     padding: 15px 0;
     border-bottom: 2px solid var(--site-accent-color);
     box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.274);
-    position: sticky; /* Keeps nav fixed at the top during scroll. */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Keeps nav above hero graphics and moving icons. */
+    z-index: 1000;
 }
 
 .nav-container {
@@ -104,7 +99,7 @@ body.home-page {
 }
 
 .nav-toggle {
-    display: none; /* Checkbox stays functional but is visually hidden. */
+    display: none;
 }
 
 .nav-toggle-label {
@@ -139,14 +134,13 @@ body.home-page {
     color: var(--site-accent-color);
 }
 
-/* === HERO === */
 .hero {
     background-color: var(--site-accent-color);
     color: var(--site-surface-color);
     text-align: center;
     padding: 50px 20px 0 20px;
     position: relative;
-    overflow: hidden; /* Clips falling icons to hero bounds. */
+    overflow: hidden;
 }
 
 .hero-decorative-icons {
@@ -159,12 +153,12 @@ body.home-page {
 .snow-icon {
     position: absolute;
     top: -40px;
-    left: var(--left); /* Each nth-child defines its own horizontal start. */
+    left: var(--left);
     width: calc(var(--size) * var(--scale));
     height: calc(var(--size) * var(--scale));
     opacity: 0.8;
     transform-origin: center;
-    animation: hero-icon-fall var(--dur) linear infinite; /* Each icon uses its own speed. */
+    animation: hero-icon-fall var(--dur) linear infinite;
     animation-delay: var(--delay);
 }
 
@@ -181,7 +175,7 @@ body.home-page {
 .hero-buttons,
 .hero-illustration {
     position: relative;
-    z-index: 2; /* Keeps content above the animated icon layer. */
+    z-index: 2;
 }
 
 @keyframes hero-icon-fall {
@@ -189,7 +183,7 @@ body.home-page {
         transform: translateY(0) rotate(0deg);
     }
     to {
-        transform: translateY(650px) rotate(360deg); /* Long travel for a full hero pass. */
+        transform: translateY(650px) rotate(360deg);
     }
 }
 
@@ -212,7 +206,6 @@ body.home-page {
     margin-bottom: 40px;
 }
 
-/* === BUTTONS === */
 .btn {
     text-decoration: none;
     padding: 12px 30px;
@@ -241,7 +234,6 @@ body.home-page {
     background-color: var(--primary-button-hover-background-color);
 }
 
-/* === HERO ILLUSTRATION === */
 .hero-illustration {
     background-color: var(--hero-illustration-background-color);
     height: 200px;
@@ -279,11 +271,10 @@ body.home-page {
     max-width: 700px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Classic absolute-centering pattern. */
+    transform: translateX(-50%);
     z-index: 2;
 }
 
-/* Per-item transforms create a natural, hand-placed shelf arrangement. */
 .hero-shelf-icons .hobby-svg:nth-child(1)  { transform: translateY(15px) translateX(-10px)    rotate(0deg); } 
 .hero-shelf-icons .hobby-svg:nth-child(2)  { transform: translateY(14px) rotate(-6deg); }
 .hero-shelf-icons .hobby-svg:nth-child(3)  { transform: translateY(25px)  rotate(2deg); }
@@ -298,7 +289,6 @@ body.home-page {
 }
 
 
-/* Hover transforms preserve the playful arrangement while lifting each icon. */
 .hero-shelf-icons .hobby-svg:nth-child(1):hover  { transform: translateY(8px)  rotate(-4deg) scale(1.1); }
 .hero-shelf-icons .hobby-svg:nth-child(2):hover  { transform: translateY(2px)  rotate(2deg)  scale(1.1); }
 .hero-shelf-icons .hobby-svg:nth-child(3):hover  { transform: translateY(14px) rotate(-6deg) scale(1.1); }
@@ -352,18 +342,17 @@ body.home-page {
 }
 
 .svg-back {
-    z-index: 1; /* Back layer. */
+    z-index: 1;
 }
 
 .svg-mid {
-    z-index: 2; /* Middle layer. */
+    z-index: 2;
 }
 
 .svg-front {
-    z-index: 3; /* Front layer. */
+    z-index: 3;
 }
 
-/* === SECONDARY BAR === */
 .secondary-bar {
     background-color: var(--site-brand-text-color);
     color: var(--site-surface-color);
@@ -380,7 +369,6 @@ body.home-page {
     font-weight: bold;
 }
 
-/* === HOBBY GRID === */
 .hobby-selection {
     padding: 60px 20px;
     background-color: var(--site-surface-color);
@@ -424,7 +412,7 @@ body.home-page .hobby-container {
     margin: 0 auto 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers icon inside each circle. */
+    justify-content: center;
     font-size: 3rem;
 }
 
@@ -447,7 +435,6 @@ body.home-page .hobby-container {
     line-height: 1.5;
 }
 
-/* === FOOTER === */
 .main-footer {
     background-color: var(--footer-background-color);
     color: var(--footer-link-text-color);
@@ -488,7 +475,6 @@ body.home-page .hobby-container {
     text-align: center;
 }
 
-/* === RESPONSIVE (max-width: 768px) === */
 @media (max-width: 768px) {
     .nav-container {
         display: grid;
@@ -512,12 +498,11 @@ body.home-page .hobby-container {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        max-height: 0; /* Collapsed by default on mobile. */
+        max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
 
-    /* CSS-only menu toggle: checkbox checked => reveal nav links. */
     .nav-toggle:checked + .nav-toggle-label + .nav-links {
         max-height: 320px;
         padding-bottom: 8px;

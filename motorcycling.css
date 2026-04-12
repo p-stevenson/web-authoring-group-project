@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Oxanium:wght@500;600;700&display=swap');
 
-/* Motorcycling page overrides */
-/* Edit these variables to customize this page only. */
 body.hobby-motorcycling {
     --subpage-heading-font-family: 'Oxanium', 'Arial', sans-serif;
     --subpage-body-font-family: 'Arial', sans-serif;

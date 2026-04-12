@@ -1,6 +1,6 @@
-# HOBBYCLUB Website Project — Process Documentation
+# HOBBYCLUB Website Project - Process Notes
 
-> A 5-page hobby website built as a school project. Presentation notes and design rationale.
+> A 5-page hobby website built as a school project. These are the notes we kept while putting it together.
 
 ---
 
@@ -21,7 +21,7 @@
 |----------|-----------|
 | Rebranded from "HOBBYHUB" → "HOBBYCLUB" | More inclusive, community-focused feel |
 | Husky logo (SVG) | Replaces generic crown emoji; adds personality |
-| Minimal static footer | Keeps the layout clean while leaving legal links as simple placeholders for this assignment |
+| Minimal static footer | Keeps the layout clean while leaving legal links as temporary stand-ins for this assignment |
 
 ### 2.2 Typography
 
@@ -108,12 +108,12 @@ Key overrideable tokens per page:
 - `--sub-hero-bg-image` — hero wave SVG (each page can use a distinct wave asset)
 - `--sub-intro-bg`, heading colors, text colors, timeline dot colors, etc.
 
-Motorcycling and Travel are now the two most complete reference pages. Both use final copy, real resource links, live video embeds, and real carousel imagery. Motorcycling still goes further visually by overriding typography, resource-link styling, and carousel presentation more aggressively than the other pages.
+Motorcycling and Travel are still the strongest reference pages. Both use final copy, real resource links, live video embeds, and real carousel imagery. Motorcycling pushes the styling a bit harder than the other pages.
 
 ### 3.6 Custom 404 Page
 
 - Styled to match site branding
-- Used as the placeholder destination for footer legal links in this assignment version
+- Used as the temporary destination for footer legal links in this assignment version
 
 ---
 
@@ -171,15 +171,11 @@ Motorcycling and Travel are now the two most complete reference pages. Both use 
 │   ├── Website Technical Requirements Outline.txt
 │   ├── Travel.txt
 │   └── website-plan.md
-├── archived-templates/     # Archived template references and layout explorations
-│   ├── template.html
-│   ├── template-skillpath.html
-│   └── template-skillpath.css
 └── reference/              # Design reference images
     └── *.png / *.jpg
 ```
 
-The original template examples are now stored in `archived-templates/`, while the live site pages use the shared sub-template system and a cleaner semantic page structure.
+The live site pages all use the shared sub-template system, with page-specific CSS files for the different hobby themes.
 
 ---
 
@@ -219,9 +215,8 @@ The original template examples are now stored in `archived-templates/`, while th
 - [x] The process documentation and technical checklist have been refreshed to match the latest audited project state
 
 ### In Progress / Remaining
-- [ ] Replace carousel placeholder slides with real photographs on Gardening and Hiking
-- [ ] Fill in Gardening and Hiking content (intro text, timeline entries, resource links)
-- [ ] Replace the Gardening and Hiking placeholder video embeds with final clips
+- [ ] Replace the Gardening and Hiking carousel slides with real photographs
+- [ ] Replace the temporary Gardening and Hiking video slots with final clips
 - [ ] Confirm FTP upload and post-deployment checks on the live or local server
 - [ ] Final cross-browser / mobile testing
 
@@ -229,10 +224,10 @@ The original template examples are now stored in `archived-templates/`, while th
 
 ## 8. Future Improvements (If Time Permits)
 
-- [ ] Complete Gardening and Hiking to the same standard as Motorcycling and Travel
+- [ ] Add final photos and videos to Gardening and Hiking
 - [ ] Implement dark mode via `prefers-color-scheme`
 - [ ] Add hover micro-interactions on hobby cards
-- [ ] Replace the remaining Gardening and Hiking placeholder content links with real destinations
+- [ ] Keep improving the Gardening and Hiking pages once final media is chosen
 
 ---
 
@@ -258,9 +253,9 @@ The original template examples are now stored in `archived-templates/`, while th
 | `b4e3f2b` | Timeline CSS merged into sub-template |
 | `bb6d517` | Resources section redesigned with wave overlap |
 | `a0ac645` | Major sub-template CSS overhaul |
-| `115bed5` | Layout explorations archived to `archived-templates/` |
+| `115bed5` | Older layout explorations moved out of the main site files |
 | `30be5b0` | Sub-template CSS cleaned up |
-| `9aef1f1` | Carousel placeholder images added |
+| `9aef1f1` | Starter carousel slides added |
 | `2ef0c73` | CSS comments added, resource spacing refined |
 | `445f4e6` | **Four hobby sub-pages created** (Gardening, Hiking, Motorcycling, Travel); home page topics updated |
 | `5fb7c17` | **Per-page CSS files added**; `--sub-hero-bg-image` token introduced for per-page hero wave overrides |
