@@ -1,45 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@500;700;800&display=swap');
+
 body.hobby-hiking {
-    --subpage-heading-font-family: 'Slackey', 'Arial', sans-serif;
+    --subpage-heading-font-family: 'Outfit', 'Slackey', 'Arial', sans-serif;
     --subpage-body-font-family: 'Arial', sans-serif;
 
-    --subpage-hero-background-color: #b8d7de;
+    --subpage-hero-background-color: #c7d9c4;
     --subpage-hero-wave-image: url('images/hiking-sub-hero-wave.svg');
     --subpage-hero-text-color: #ffffff;
     --subpage-hero-title-font-size: clamp(2.4rem, 7.5vw, 4.2rem);
     --subpage-hero-tagline-font-size: clamp(1rem, 2.6vw, 1.3rem);
 
-    --subpage-intro-background-color: #b8d7de;
+    --subpage-intro-background-color: #c7d9c4;
     --subpage-intro-heading-font-size: 1.8rem;
-    --subpage-intro-heading-color: #2f4f57;
+    --subpage-intro-heading-color: #30483a;
     --subpage-intro-body-font-size: 1rem;
-    --subpage-intro-body-text-color: #2d3a3f;
+    --subpage-intro-body-text-color: #334339;
 
     --subpage-carousel-label-font-size: 0.85rem;
 
     --subpage-resources-heading-font-size: 2rem;
-    --subpage-resource-link-font-size: 1rem;
+    --subpage-resource-link-font-size: 1.04rem;
     --subpage-resource-link-color: #ffffff;
-    --subpage-resource-link-hover-color: #4dcad2;
+    --subpage-resource-link-hover-color: #dff0c6;
 
-    --subpage-content-background-color: #ffffff;
+    --subpage-content-background-color: #fbfcf9;
     --subpage-section-heading-font-size: 2rem;
-    --subpage-section-heading-color: #2f4f57;
-    --subpage-section-supporting-text-color: #586d73;
+    --subpage-section-heading-color: #30483a;
+    --subpage-section-supporting-text-color: #5c6f61;
 
-    --subpage-timeline-step-one-color: #8cc63f;
-    --subpage-timeline-step-two-color: #4dcad2;
-    --subpage-timeline-step-three-color: #7b68ee;
+    --subpage-timeline-step-one-color: #84b15a;
+    --subpage-timeline-step-two-color: #4d9078;
+    --subpage-timeline-step-three-color: #58759d;
     --subpage-timeline-heading-font-size: 0.95rem;
-    --subpage-timeline-heading-color: #2f4f57;
+    --subpage-timeline-heading-color: #30483a;
     --subpage-timeline-body-font-size: 0.9rem;
-    --subpage-timeline-body-text-color: #586d73;
+    --subpage-timeline-body-text-color: #5c6f61;
 }
 
 #hiking-page-content .sub-intro-text {
-    border-left: 4px solid rgba(47, 79, 87, 0.18);
+    border-left: 4px solid rgba(48, 72, 58, 0.18);
     padding-left: 18px;
 }
 
 #hiking-resources {
     scroll-margin-top: 96px;
+}
+
+body.hobby-hiking .resource-circle {
+    background-color: #dbe9d8;
+}
+
+body.hobby-hiking .carousel-slide {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+body.hobby-hiking .carousel-slide span {
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(25, 40, 31, 0.72);
+    font-family: 'Outfit', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: right;
+}
+
+body.hobby-hiking .carousel-slide-1 {
+    background-image: linear-gradient(rgba(37, 59, 46, 0.18), rgba(37, 59, 46, 0.18)), url('images/rathbeggan_lakes.jpg');
+}
+
+body.hobby-hiking .carousel-slide-2 {
+    background-image: linear-gradient(rgba(36, 46, 35, 0.2), rgba(36, 46, 35, 0.2)), url('images/hill_tara.jpg');
+}
+
+body.hobby-hiking .carousel-slide-3 {
+    background-image: linear-gradient(rgba(34, 44, 60, 0.24), rgba(34, 44, 60, 0.24)), url('images/loughcrew.jpg');
+}
+
+body.hobby-hiking .resource-link-item {
+    font-family: 'Barlow Semi Condensed', 'Arial Narrow', Arial, sans-serif;
+    font-variant-caps: all-small-caps;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+}
+
+.sub-trails {
+    background-color: var(--subpage-content-background-color);
+    padding: 0 0 80px;
+}
+
+.sub-trails h2 {
+    font-family: var(--subpage-heading-font-family);
+    font-size: var(--subpage-section-heading-font-size);
+    color: var(--subpage-section-heading-color);
+    text-align: center;
+}
+
+.sub-trails-intro {
+    font-family: var(--subpage-body-font-family);
+    color: var(--subpage-section-supporting-text-color);
+    line-height: 1.7;
+    text-align: center;
+    max-width: 760px;
+    margin: 14px auto 0;
+}
+
+.trail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.trail-card {
+    background-color: #ffffff;
+    border: 1px solid var(--site-border-light-color);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.trail-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+.trail-card-body {
+    padding: 22px 22px 24px;
+}
+
+.trail-card h3 {
+    font-family: var(--subpage-heading-font-family);
+    font-size: 1.2rem;
+    color: var(--subpage-section-heading-color);
+    margin-bottom: 10px;
+}
+
+.trail-card p {
+    font-family: var(--subpage-body-font-family);
+    color: var(--subpage-section-supporting-text-color);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .trail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trail-card-body {
+        padding: 20px;
+    }
 }

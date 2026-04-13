@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap");
+
+/* Gardening page overrides */
+/* Edit these variables to customize this page only. */
 body.hobby-gardening {
 
-    --subpage-heading-font-family: 'Slackey', 'Arial', sans-serif;
-    --subpage-body-font-family: 'Arial', sans-serif;
+    --subpage-heading-font-family: 'Anuphan', 'Anuphan', sans-serif;
+    --subpage-body-font-family: 'Anuphan', sans-serif;
 
     --subpage-hero-background-color: #c6e6b4;
-    --subpage-hero-wave-image: url('images/gardening-sub-hero-wave.svg');
+    --subpage-hero-wave-image: url('images/gardening-sub-hero-wave.svg'), url('images/gardening-banner.jpg');
     --subpage-hero-text-color: #ffffff;
     --subpage-hero-title-font-size: clamp(2.4rem, 7.5vw, 4.2rem);
     --subpage-hero-tagline-font-size: clamp(1rem, 2.6vw, 1.3rem);
@@ -16,7 +20,6 @@ body.hobby-gardening {
     --subpage-intro-body-text-color: #2f3a28;
 
     --subpage-carousel-label-font-size: 0.85rem;
-
     --subpage-resources-heading-font-size: 2rem;
     --subpage-resource-link-font-size: 1rem;
     --subpage-resource-link-color: #ffffff;
@@ -29,7 +32,7 @@ body.hobby-gardening {
 
     --subpage-timeline-step-one-color: #8cc63f;
     --subpage-timeline-step-two-color: #f78d65;
-    --subpage-timeline-step-three-color: #7b68ee;
+    --subpage-timeline-step-three-color: #553ed6;
     --subpage-timeline-heading-font-size: 0.95rem;
     --subpage-timeline-heading-color: #3d5a2b;
     --subpage-timeline-body-font-size: 0.9rem;
@@ -43,4 +46,42 @@ body.hobby-gardening {
 
 #gardening-resources {
     scroll-margin-top: 96px;
+}
+
+body.hobby-gardening .carousel-slide {
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+body.hobby-gardening .carousel-slide span {
+    display: block;
+    width: 100%;
+    padding: 14px 18px;
+    background-color: rgba(30, 39, 59, 0.78);
+    font-family: 'Anuphan', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: right;
+}
+
+body.hobby-gardening .carousel-slide-1 {
+    background-image: linear-gradient(rgba(56, 34, 75, 0.24), rgba(56, 34, 75, 0.24)), url('images/gardening-one.jpg')
+}
+
+body.hobby-gardening .carousel-slide-2 {
+    background-image: linear-gradient(rgba(56, 34, 75, 0.24), rgba(56, 34, 75, 0.24)), url('images/gardening-two.jpg')
+}
+
+body.hobby-gardening .carousel-slide-3 {
+    background-image: linear-gradient(rgba(56, 34, 75, 0.24), rgba(56, 34, 75, 0.24)), url('images/gardening-three.jpg')
+}
+
+body.hobby-gardening .sub-hero {
+    padding-top: 0px;
+}
+body.hobby-gardening h1 {
+    margin-bottom: 0px;
 }

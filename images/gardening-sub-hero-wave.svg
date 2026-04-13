@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="100%"
-   height="100%"
-   viewBox="0 0 1440 496"
+   width="1440.001"
+   height="372.24188"
+   viewBox="0 0 1440.001 372.24188"
    version="1.1"
    xml:space="preserve"
-   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+   style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
    id="svg1"
    sodipodi:docname="gardening-sub-hero-wave.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
@@ -23,14 +23,16 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.72222222"
-     inkscape:cx="720"
-     inkscape:cy="247.84615"
+     inkscape:cx="713.76923"
+     inkscape:cy="162.69231"
      inkscape:window-width="1912"
      inkscape:window-height="1041"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1" /><path
+     inkscape:current-layer="svg1"
+     inkscape:clip-to-page="false" /><path
      id="rect1"
-     d="M0,0l0,370c180,140 311.516,160.787 491.516,70.787c180,-90 270.182,-194.925 506.061,-29.09c153.133,107.661 352.424,80.303 442.424,10.303l0,-422l-1440,0Z"
-     style="fill:#5aa02c;fill-rule:nonzero;fill-opacity:1" /></svg>
+     d="m 0,0 v 240.46154 c 180,140 304.97681,134.57343 491.516,76.787 157.97152,-48.93669 267.41277,-175.38654 506.061,-33.09 161.4407,93.81485 352.424,38.303 442.424,-31.697 V 0 h -1440 z"
+     style="fill:#5aa02c;fill-opacity:1;fill-rule:nonzero"
+     sodipodi:nodetypes="ccsccccc" /></svg>
